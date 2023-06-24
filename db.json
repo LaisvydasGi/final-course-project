@@ -1,524 +1,155 @@
 {
+  "artists": [
+    {
+      "id": 1,
+      "name": "White Hot Chill Pipers"
+    },
+    {
+      "id": 1,
+      "name": "Linking the Parks"
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "title": "consectetur adipiscing elit",
+      "artistId": 1,
+      "url": "https://via.placeholder.com/600/92c952"
+
+    },
+    {
+      "id": 2,
+      "title": "ipsum dolor",
+      "artistId": 2,
+      "url": "https://via.placeholder.com/600/24f355"
+
+    },
+    {
+      "id": 3,
+      "title": "Mauris rhoncus vehicula",
+      "artistId": 2,
+      "url": "https://via.placeholder.com/600/771796"
+    }
+    
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "title": "Suspendiss",
+      "albumId": 1
+    },
+    {
+      "id": 2,
+      "title": "Aenean sit amet",
+      "albumId": 1
+    },
+    {
+      "id": 3,
+      "title": "faucibus bibendum",
+      "albumId": 1
+    },
+    {
+      "id": 4,
+      "title": "sagittis ullamcorper nunc",
+      "albumId": 1
+    },
+    {
+      "id": 5,
+      "title": "Praesent",
+      "albumId": 1
+    },
+    {
+      "id": 6,
+      "title": "elementum in ex",
+      "albumId": 1
+    },
+    {
+      "id": 7,
+      "title": "porta nisi convallis",
+      "albumId": 1
+    },
+    {
+      "id": 8,
+      "title": "a facilisis nisl mollis",
+      "albumId": 1
+    },
+    {
+      "id": 9,
+      "title": "Integer at nisi urna",
+      "albumId": 1
+    },
+    {
+      "id": 10,
+      "title": " Aliquam commodo",
+      "albumId": 1
+    }
+  ],
   "users": [
     {
       "id": 1,
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Nicolas",
-        "last": "Sáez"
-      },
-      "location": {
-        "street": {
-          "number": 6173,
-          "name": "Calle de Alberto Aguilera"
-        },
-        "city": "Valencia",
-        "state": "Andalucía",
-        "country": "Spain",
-        "postcode": 83961,
-        "coordinates": {
-          "latitude": "-31.8297",
-          "longitude": "-4.2481"
-        },
-        "timezone": {
-          "offset": "+10:00",
-          "description": "Eastern Australia, Guam, Vladivostok"
-        }
-      },
-      "email": "nicolas.saez@example.com",
-      "login": {
-        "uuid": "cdf93e0d-4411-4a1c-87e5-5f00ca951e7c",
-        "username": "whitefrog389",
-        "password": "irving",
-        "salt": "stfePfWU",
-        "md5": "3ccd70b43ae46a039fa7515dd6d05755",
-        "sha1": "97e9fcdceb6f69564f93b660b0a0f35203c44177",
-        "sha256": "38b34cab48a0e14624cb4e4e5ec73b2857836155606e1be7d443ba4c1d145b82"
-      },
-      "dob": {
-        "date": "1998-04-12T20:01:57.956Z",
-        "age": 25
-      },
-      "registered": {
-        "date": "2002-09-22T01:51:33.552Z",
-        "age": 20
-      },
-      "phone": "976-531-847",
-      "cell": "658-422-267",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/4.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/4.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/4.jpg"
-      },
-      "nat": "ES"
+      "username": "bobbyCat123"
     },
     {
       "id": 2,
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Christian",
-        "last": "Hansen"
-      },
-      "location": {
-        "street": {
-          "number": 2939,
-          "name": "Egelunden"
-        },
-        "city": "Nr Åby",
-        "state": "Danmark",
-        "country": "Denmark",
-        "postcode": 75688,
-        "coordinates": {
-          "latitude": "-42.4954",
-          "longitude": "-129.7871"
-        },
-        "timezone": {
-          "offset": "+11:00",
-          "description": "Magadan, Solomon Islands, New Caledonia"
-        }
-      },
-      "email": "christian.hansen@example.com",
-      "login": {
-        "uuid": "32f4281b-e4f1-44c5-ac3a-24e2e88cbf1f",
-        "username": "brownmouse242",
-        "password": "shao",
-        "salt": "6q0htUuj",
-        "md5": "465ddf759472ce352348d263203ee49f",
-        "sha1": "6b58b6d2180dc453938dcd052d20eb58d6bb18c2",
-        "sha256": "1edd2a61a5a607fc0c7d692676cd71b77f7a6675a2afd54d24918f759be059f2"
-      },
-      "dob": {
-        "date": "1961-12-03T11:46:08.893Z",
-        "age": 61
-      },
-      "registered": {
-        "date": "2020-04-18T10:42:27.173Z",
-        "age": 3
-      },
-      "phone": "95577909",
-      "cell": "06219122",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/13.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/13.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/13.jpg"
-      },
-      "nat": "DK"
+      "username": "johnnyBoy"
     },
     {
       "id": 3,
-      "gender": "female",
-      "name": {
-        "title": "Ms",
-        "first": "Kaylee",
-        "last": "Harper"
-      },
-      "location": {
-        "street": {
-          "number": 1171,
-          "name": "Prospect Rd"
-        },
-        "city": "Coffs Harbour",
-        "state": "New South Wales",
-        "country": "Australia",
-        "postcode": 8994,
-        "coordinates": {
-          "latitude": "-86.9733",
-          "longitude": "169.6625"
-        },
-        "timezone": {
-          "offset": "+5:00",
-          "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
-        }
-      },
-      "email": "kaylee.harper@example.com",
-      "login": {
-        "uuid": "85db1a43-bd53-4b24-9ea1-efdca95cbb05",
-        "username": "bigtiger990",
-        "password": "peaches",
-        "salt": "ZwnRkrM3",
-        "md5": "4069664435993156227910ccd9cd61f2",
-        "sha1": "bfcdffa715cb99e984537a1adec7b7cb1ac9eae8",
-        "sha256": "1b23196e7061009510129c06b3fb282e4daa602deab2738565881f952603aae4"
-      },
-      "dob": {
-        "date": "1993-07-23T02:40:23.546Z",
-        "age": 29
-      },
-      "registered": {
-        "date": "2017-11-01T23:09:50.449Z",
-        "age": 5
-      },
-      "phone": "06-3777-0306",
-      "cell": "0478-454-104",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/women/62.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/62.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/62.jpg"
-      },
-      "nat": "AU"
+      "username": "kakaMan"
     },
     {
       "id": 4,
-      "gender": "female",
-      "name": {
-        "title": "Ms",
-        "first": "Elaine",
-        "last": "Castro"
-      },
-      "location": {
-        "street": {
-          "number": 3458,
-          "name": "Lone Wolf Trail"
-        },
-        "city": "Athens",
-        "state": "Nevada",
-        "country": "United States",
-        "postcode": 14597,
-        "coordinates": {
-          "latitude": "81.9066",
-          "longitude": "40.2180"
-        },
-        "timezone": {
-          "offset": "+11:00",
-          "description": "Magadan, Solomon Islands, New Caledonia"
-        }
-      },
-      "email": "elaine.castro@example.com",
-      "login": {
-        "uuid": "42df5708-00c3-4ade-b120-974304ba60cf",
-        "username": "beautifulmeercat547",
-        "password": "boricua",
-        "salt": "dWlNZ5pg",
-        "md5": "72a241040ae5a47928618ba8ed212eab",
-        "sha1": "6eb50a2c38a9a51365c964755eeb45fc9bbe9812",
-        "sha256": "93cdce1b8b4b5d5a877d1dde222d1a017ec0d9be41d58496af98e41d56dbdf43"
-      },
-      "dob": {
-        "date": "1962-02-04T23:59:30.102Z",
-        "age": 61
-      },
-      "registered": {
-        "date": "2006-12-22T13:00:37.441Z",
-        "age": 16
-      },
-      "phone": "(476) 507-9560",
-      "cell": "(612) 965-9086",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/women/4.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/4.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/4.jpg"
-      },
-      "nat": "US"
+      "username": "dudePERfection"
     },
     {
       "id": 5,
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Vilho",
-        "last": "Lammi"
-      },
-      "location": {
-        "street": {
-          "number": 5233,
-          "name": "Rautatienkatu"
-        },
-        "city": "Utajärvi",
-        "state": "North Karelia",
-        "country": "Finland",
-        "postcode": 65203,
-        "coordinates": {
-          "latitude": "-28.9376",
-          "longitude": "-156.6376"
-        },
-        "timezone": {
-          "offset": "-8:00",
-          "description": "Pacific Time (US & Canada)"
-        }
-      },
-      "email": "vilho.lammi@example.com",
-      "login": {
-        "uuid": "f728ae59-934c-49b2-ace8-85c8e581b87f",
-        "username": "tinylion572",
-        "password": "shearer",
-        "salt": "MorWJUik",
-        "md5": "79acb18e3c72414be7820782e47811d3",
-        "sha1": "90868a01f2a27c57313b7314581aa44d9dbbe386",
-        "sha256": "ec69f05cfd118f9d977300cd8e090c269914fab960e237f8ba69e9b979cf284e"
-      },
-      "dob": {
-        "date": "1962-07-14T02:31:42.064Z",
-        "age": 60
-      },
-      "registered": {
-        "date": "2018-08-06T16:38:35.396Z",
-        "age": 4
-      },
-      "phone": "09-351-754",
-      "cell": "049-530-75-20",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/56.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/56.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/56.jpg"
-      },
-      "nat": "FI"
+      "username": "jehovah-source"
     },
     {
       "id": 6,
-      "gender": "male",
-      "name": {
-        "title": "Monsieur",
-        "first": "Luc",
-        "last": "Garcia"
-      },
-      "location": {
-        "street": {
-          "number": 7916,
-          "name": "Route de Genas"
-        },
-        "city": "Münchwilen (Ag)",
-        "state": "Appenzell Innerrhoden",
-        "country": "Switzerland",
-        "postcode": 3242,
-        "coordinates": {
-          "latitude": "-62.1294",
-          "longitude": "-7.7265"
-        },
-        "timezone": {
-          "offset": "-3:30",
-          "description": "Newfoundland"
-        }
-      },
-      "email": "luc.garcia@example.com",
-      "login": {
-        "uuid": "955c5912-7eb7-40f1-a0b7-6866352b81a2",
-        "username": "sadkoala468",
-        "password": "1223",
-        "salt": "D3SCd0h5",
-        "md5": "03fd28f63384679617106006856610f7",
-        "sha1": "797446eb22da9b5101417dd50560a1459eb3202f",
-        "sha256": "02414b2cbcfa7b6de17104a8d0b36e04bd1e283a90d8b9d421c538ff91f6f370"
-      },
-      "dob": {
-        "date": "1974-11-07T03:43:21.615Z",
-        "age": 48
-      },
-      "registered": {
-        "date": "2010-06-27T11:11:33.307Z",
-        "age": 12
-      },
-      "phone": "076 165 06 14",
-      "cell": "078 821 29 32",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/38.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/38.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/38.jpg"
-      },
-      "nat": "CH"
-    }   
-  ],
-  "playlists": [
-    {
-      "userId": 1,
-      "id": 1,
-      "title": "quidem molestiae enim"
-    },
-    {
-      "userId": 2,
-      "id": 2,
-      "title": "sunt qui excepturi placeat culpa"
-    },
-    {
-      "userId": 3,
-      "id": 3,
-      "title": "omnis laborum odio"
-    },
-    {
-      "userId": 4,
-      "id": 4,
-      "title": "non esse culpa molestiae omnis sed optio"
-    },
-    {
-      "userId": 5,
-      "id": 5,
-      "title": "eaque aut omnis a"
-    },
-    {
-      "userId": 6,
-      "id": 6,
-      "title": "natus impedit quibusdam illo est"
-    },
-    {
-      "userId": 1,
-      "id": 7,
-      "title": "quibusdam autem aliquid et et quia"
-    },
-    {
-      "userId": 1,
-      "id": 8,
-      "title": "qui fuga est a eum"
-    },
-    {
-      "userId": 6,
-      "id": 9,
-      "title": "saepe unde necessitatibus rem"
-    },
-    {
-      "userId": 6,
-      "id": 10,
-      "title": "distinctio laborum qui"
-    },
-    {
-      "userId": 2,
-      "id": 11,
-      "title": "quam nostrum impedit mollitia quod et dolor"
-    },
-    {
-      "userId": 2,
-      "id": 12,
-      "title": "consequatur autem doloribus natus consectetur"
-    },
-    {
-      "userId": 3,
-      "id": 13,
-      "title": "ab rerum non rerum consequatur ut ea unde"
-    },
-    {
-      "userId": 4,
-      "id": 14,
-      "title": "ducimus molestias eos animi atque nihil"
-    },
-    {
-      "userId": 4,
-      "id": 15,
-      "title": "ut pariatur rerum ipsum natus repellendus praesentium"
-    },
-    {
-      "userId": 3,
-      "id": 16,
-      "title": "voluptatem aut maxime inventore autem magnam atque repellat"
-    },
-    {
-      "userId": 5,
-      "id": 17,
-      "title": "aut minima voluptatem ut velit"
-    },
-    {
-      "userId": 5,
-      "id": 18,
-      "title": "nesciunt quia et doloremque"
-    },
-    {
-      "userId": 6,
-      "id": 19,
-      "title": "velit pariatur quaerat similique libero omnis quia"
-    },
-    {
-      "userId": 5,
-      "id": 20,
-      "title": "voluptas rerum iure ut enim"
-    },
-    {
-      "userId": 4,
-      "id": 21,
-      "title": "repudiandae voluptatem optio est consequatur rem in temporibus et"
-    },
-    {
-      "userId": 3,
-      "id": 22,
-      "title": "et rem non provident vel ut"
-    },
-    {
-      "userId": 2,
-      "id": 23,
-      "title": "incidunt quisquam hic adipisci sequi"
-    },
-    {
-      "userId": 1,
-      "id": 24,
-      "title": "dolores ut et facere placeat"
-    },
-    {
-      "userId": 3,
-      "id": 25,
-      "title": "vero maxime id possimus sunt neque et consequatur"
-    },
-    {
-      "userId": 5,
-      "id": 26,
-      "title": "quibusdam saepe ipsa vel harum"
-    },
-    {
-      "userId": 1,
-      "id": 27,
-      "title": "id non nostrum expedita"
-    },
-    {
-      "userId": 2,
-      "id": 28,
-      "title": "omnis neque exercitationem sed dolor atque maxime aut cum"
-    },
-    {
-      "userId": 4,
-      "id": 29,
-      "title": "inventore ut quasi magnam itaque est fugit"
-    },
-    {
-      "userId": 6,
-      "id": 30,
-      "title": "tempora assumenda et similique odit distinctio error"
+      "username": "yo_Mamma69"
     }
   ],
-  "artists": {
-    "name": "typicode"
-  },
-  "songs": [
-    { 
-      "title": "Death Bed",
-      "artist": "Powfu",
-      "artwork": "https://samplesongs.netlify.app/album-arts/death-bed.jpg",
-      "url": "https://samplesongs.netlify.app/Death%20Bed.mp3",
-      "id": 1,
-      "artistId": 1
+  "likedSongs": [
+    {
+      "userId": 1,
+      "songId": 1,
+      "isLiked": true
     },
     {
-      "title": "Bad Liar",
-      "artist": "Imagine Dragons",
-      "artwork": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
-      "url": "https://samplesongs.netlify.app/Bad%20Liar.mp3",
-      "id": 2,
-      "artistId": 1
+      "userId": 1,
+      "songId": 4,
+      "isLiked": true
     },
     {
-      "title": "Faded",
-      "artist": "Alan Walker",
-      "artwork": "https://samplesongs.netlify.app/album-arts/faded.jpg",
-      "url": "https://samplesongs.netlify.app/Faded.mp3",
-      "id": "3"
+      "userId": 1,
+      "songId": 6,
+      "isLiked": true
     },
     {
-      "title": "Hate Me",
-      "artist": "Ellie Goulding",
-      "artwork": "https://samplesongs.netlify.app/album-arts/hate-me.jpg",
-      "url": "https://samplesongs.netlify.app/Hate%20Me.mp3",
-      "id": "4"
+      "userId": 2,
+      "songId": 1,
+      "isLiked": true
     },
     {
-      "title": "Solo",
-      "artist": "Clean Bandit",
-      "artwork": "https://samplesongs.netlify.app/album-arts/solo.jpg",
-      "url": "https://samplesongs.netlify.app/Solo.mp3",
-      "id": "5"
+      "userId": 2,
+      "songId": 3,
+      "isLiked": true
     },
     {
-      "title": "Without Me",
-      "artist": "Halsey",
-      "artwork": "https://samplesongs.netlify.app/album-arts/without-me.jpg",
-      "url": "https://samplesongs.netlify.app/Without%20Me.mp3",
-      "id": "6"
+      "userId": 2,
+      "songId": 4,
+      "isLiked": true
+    },
+    {
+      "userId": 3,
+      "songId": 10,
+      "isLiked": true
+    },
+    {
+      "userId": 3,
+      "songId": 5,
+      "isLiked": true
     }
   ]
-  
 }
