@@ -9,12 +9,13 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
   const imgUrlHandler =  e => setImgUrl(e.target.value);
   const releaseDateHandler =  e => setReleaseDate(e.target.value);
 
-  // useEffect(() => {
-  //   if(initialData) {
-  //     setTitle(initialData.title)
-  //     (initialData.description)
-  //   }
-  // }, [initialData])
+  useEffect(() => {
+    if(initialData) {
+      setTitle(initialData.title)
+      setImgUrl(initialData.imgUrl)
+      setReleaseDate(initialData.released)
+    }
+  }, [initialData])
 
 
   const formSubmitHandler = e => {
@@ -40,7 +41,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
 
       <div className="form-control">
         <label htmlFor="title">Cover Image URL:</label>
-        <input type="url" placeholder="https://example.com" id="title" name="title" value={imgUrl} onChange={imgUrlHandler}/>
+        <input type="url" placeholder="https://via.placeholder.com/150/771722" id="title" name="title" value={imgUrl} onChange={imgUrlHandler}/>
       </div>
 
       <div className='form-control'>

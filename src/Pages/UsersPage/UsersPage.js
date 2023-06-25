@@ -26,6 +26,7 @@ const UsersPage = () => {
           
         ))}
       </ul>
+      <Link to='/users/create'>Add New User</Link>
     </Container>
   )
 }

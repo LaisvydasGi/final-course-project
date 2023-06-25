@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"
 import Card from "../../components/Card/Card"
 import { BounceLoader } from "react-spinners"
+import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
 
 const ArtistPage = () => {
   const id = useParams().id;
-  const navigator = useNavigate();
 
   const [artist, setArtist] = useState(null);
-  const [deleteStatus, setDeleteStatus] = useState(false);
   // const [songs, setSongs] = useState([]);
 
 
@@ -25,30 +24,18 @@ const ArtistPage = () => {
 
   }, [id])
 
+
   if (!artist) {
     return <BounceLoader color="#000000" />;
   }
 
-  const deleteBtnHandler = () => setDeleteStatus(prevState => !prevState);
-  const noDeleteBtnHandler = () => setDeleteStatus(false);
-
-  const yesDeleteBtnHandler = () => {
-    axios.delete(`${SERVER_URL}/artists/${id}`)
-      .then(res => navigator('/artists'))
-      .catch(err => console.log(err.message))
-  }
-
   return (
     <Container>
-      <Link to={`/artists/edit/${id}`}>Edit Artist Info</Link>
-      <button onClick={deleteBtnHandler}>Delete Artist</button>
-      {deleteStatus ? (
-        <Card>
-          <h3>Are you sure you want to delete this artist?</h3>
-          <button onClick={yesDeleteBtnHandler}>Yes</button>
-          <button onClick={noDeleteBtnHandler}>No</button>
-        </Card>
-      ) : ''}
+      <div>
+        <Link to={`/artists/edit/${id}`}>Edit Artist Info</Link>
+      </div>
+
+      <DeleteConfirm itemName={artist.name} deleteFrom={`/artists/${id}`} navigateTo={`/artists/`} />
 
       <div>
         <h1>{artist.name} </h1>
@@ -69,7 +56,6 @@ const ArtistPage = () => {
             <li key={album.id} className="">
               <Link to={`/albums/${album.id}`}>
                 <Card>
-                  {console.log(album)}
                   <div>
                     <img src={album.imgUrl} alt='album cover'/>
                   </div>

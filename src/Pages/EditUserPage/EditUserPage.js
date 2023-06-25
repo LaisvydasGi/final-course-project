@@ -5,36 +5,36 @@ import axios from 'axios'
 import Container from '../../components/Container/Container'
 import { SERVER_URL } from '../../config'
 import { BeatLoader } from "react-spinners"
-import ArtistForm from '../../components/ArtistForm/ArtistForm'
+import UserForm from '../../components/UserForm/UserForm'
 
-const EditArtistPage = () => {
+const EditUserPage = () => {
   const { id } = useParams()
   const navigator = useNavigate();
 
-  const [artist, setArtist] = useState(null)
+  const [user, setUser] = useState(null)
   const [errorMessage, setErrorMessage] = useState('')
 
 
 
   useEffect(() => {
 
-    axios.get(`${SERVER_URL}/artists/${id}`)
-      .then(res => setArtist(res.data))
+    axios.get(`${SERVER_URL}/users/${id}`)
+      .then(res => setUser(res.data))
       .catch(err => setErrorMessage(err.message))
 
   }, [id])
 
 
 
-  if (!artist && !errorMessage) {
+  if (!user && !errorMessage) {
     return <Container><BeatLoader color="#000000" /></Container>
   }
 
 
-  const editArtistHandler = (data) => {
+  const editUserHandler = (data) => {
 
-    axios.put(`${SERVER_URL}/artists/${id}`, data)
-      .then(res => navigator(`/artists/${id}`))
+    axios.put(`${SERVER_URL}/users/${id}`, data)
+      .then(res => navigator(`/users/${id}`))
       .catch(err => setErrorMessage(err.message))
   
   }
@@ -45,10 +45,11 @@ const EditArtistPage = () => {
       {errorMessage ? (
         <p>{errorMessage}</p>
       ): (
-        <ArtistForm initialData={artist} onArtistFormSubmit={editArtistHandler}/>
+        <UserForm initialData={user} onUserFormSubmit={editUserHandler}/>
       )}
     </Container>
   )
+
 }
 
-export default EditArtistPage
+export default EditUserPage
