@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom"
 import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"
+import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
 
 const UserPage = () => {
   const id = useParams().id;
@@ -49,8 +50,9 @@ const UserPage = () => {
 
   return (
     <Container>
-      <button>Delete User</button>
-      {/* <Link to={`/users/edit/${user.id}`}>Edit User</Link> */}
+
+      <DeleteConfirm itemName={user.username} deleteFrom={`/users/${id}`} navigateTo={`/users/`} />
+
       <h2>{user.id}. {user.username} </h2>
       <p>Username: {user.username}</p>
       <h3>Liked songs:</h3>

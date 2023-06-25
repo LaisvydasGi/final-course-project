@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom"
 import Container from "../../components/Container/Container"
 import SongForm from "../../components/SongForm/SongForm"
 import Card from "../../components/Card/Card"
+import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
 
 const SongPage = () => {
   const id = useParams().id;
@@ -47,10 +48,12 @@ const SongPage = () => {
         <div className="song-wrapper">
           <button onClick={viewToggleBtnHandler}>Edit Song</button>
 
+          <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
+
           <h2>{song.title}</h2>
 
           <div className="img-wrapper">
-            <img src={song.album.imgUrl}/>
+            <img src={song.album.imgUrl} alt='album cover'/>
           </div>
 
           <p>Duration: {song.duration}</p>

@@ -1,7 +1,7 @@
 {
   "artists": [
     {
-      "name": "White Hot Chill",
+      "name": "White Hot Chillssss",
       "description": "Faucibus leo augue, at cursus nunc convallis eu. Mauris dapibus diam et sagittis dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer augue quam, semper maximus rutrum sit amet, fermentum a ante. Aliquam erat volutpat.",
       "id": 1
     },
@@ -17,13 +17,6 @@
     }
   ],
   "albums": [
-    {
-      "id": 1,
-      "title": "consectetur adipiscing elit",
-      "artistId": 1,
-      "imgUrl": "https://via.placeholder.com/150/92c952",
-      "released": "2002-06-18"
-    },
     {
       "id": 2,
       "title": "ipsum dolor",
@@ -46,67 +39,11 @@
       "id": 4
     },
     {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 5
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 6
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 7
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 8
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 9
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 10
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 11
-    },
-    {
-      "title": "",
-      "artistId": 2,
-      "imgUrl": "",
-      "released": "",
-      "id": 12
-    },
-    {
-      "title": "",
+      "title": "ADfasdasd",
       "artistId": 1,
       "imgUrl": "",
-      "released": "",
-      "id": 13
+      "released": "2023-06-16",
+      "id": 5
     }
   ],
   "songs": [
@@ -151,24 +88,6 @@
       "title": " Aliquam commodo",
       "duration": "2:56",
       "albumId": 3
-    },
-    {
-      "title": "dasdasd",
-      "duration": "4:3",
-      "albumId": 1,
-      "id": 11
-    },
-    {
-      "title": "labas",
-      "duration": "4:3",
-      "albumId": 1,
-      "id": 12
-    },
-    {
-      "title": "dasdas",
-      "duration": "4:1",
-      "albumId": 1,
-      "id": 13
     }
   ],
   "users": [
@@ -179,10 +98,6 @@
     {
       "id": 2,
       "username": "johnnyBoy"
-    },
-    {
-      "id": 3,
-      "username": "kakaMan"
     },
     {
       "id": 4,
