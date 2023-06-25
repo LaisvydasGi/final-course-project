@@ -14,6 +14,7 @@ import ArtistsPage from "./Pages/ArtistsPage/ArtistsPage"
 import ArtistPage from "./Pages/ArtistPage/ArtistPage"
 import EditArtistPage from "./Pages/EditArtistPage/EditArtistPage"
 import CreateArtistPage from "./Pages/CreateArtistPage/CreateArtistPage"
+import CreateAlbumPage from "./Pages/CreateAlbumPage/CreateAlbumPage"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/users/:id' element={<UserPage/>}/>
         <Route path='/albums' element={<AlbumsPage/>}/>
         <Route path='/albums/:id' element={<AlbumPage/>}/>
+        <Route path='/albums/create/:id' element={<CreateAlbumPage/>}/>
 
         <Route path='*' element={
           <Container>

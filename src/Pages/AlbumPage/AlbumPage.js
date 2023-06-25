@@ -24,7 +24,7 @@ const AlbumPage = () => {
     album && 
     <Container>
       <div className="img-wrapper">
-        <img src={album.url} alt='album cover'/>
+        <img src={album.imgUrl} alt='album cover'/>
       </div>
       <div className='title-wrapper'>
 

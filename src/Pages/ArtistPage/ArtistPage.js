@@ -38,8 +38,6 @@ const ArtistPage = () => {
       .catch(err => console.log(err.message))
   }
 
-  artist && console.log(artist);
-
   return (
     <Container>
       <Link to={`/artists/edit/${id}`}>Edit Artist Info</Link>
@@ -51,30 +49,43 @@ const ArtistPage = () => {
           <button onClick={noDeleteBtnHandler}>No</button>
         </Card>
       ) : ''}
-      <h1>{artist.name} </h1>
-      <p>{artist.description}</p>
-      <h2>Popular songs:</h2>
-      <h2>Discography</h2>
-      <ul>
-        {artist.albums.map(album => (
-          <li key={album.id} className="">
-            <Link to={`/albums/${album.id}`}>
-              <Card>
 
-                <div>
-                  <img src={album.url} alt='album cover'/>
-                </div>
+      <div>
+        <h1>{artist.name} </h1>
+        <p>{artist.description}</p>
+      </div>
 
-                <div>
-                  {album.id}. {album.title}
-                </div>
+      <div>
+        <h2>Popular songs:</h2>
 
-              </Card>
-            </Link>
-          </li>
-        ))}
+      </div>
 
-      </ul>
+      <div>
+        <h2>Discography</h2>
+        <Link to={`/albums/create/${id}`}>Add New Album</Link>
+        
+        <ul>
+          {artist.albums.map(album => (
+            <li key={album.id} className="">
+              <Link to={`/albums/${album.id}`}>
+                <Card>
+                  {console.log(album)}
+                  <div>
+                    <img src={album.imgUrl} alt='album cover'/>
+                  </div>
+
+                  <div>
+                    {album.id}. {album.title}
+                  </div>
+
+                </Card>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+      </div>
+      
 
     </Container>
   )

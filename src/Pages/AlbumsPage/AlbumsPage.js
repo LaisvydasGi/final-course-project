@@ -32,7 +32,7 @@ const AlbumsPage = () => {
             <Link to={`/albums/${album.id}`}>
               <Card>
                 <div>
-                  <img src={album.url} alt='album cover'/>
+                  <img src={album.imgUrl} alt='album cover'/>
                 </div>
                 <div>
                   {album.id}. {album.title}

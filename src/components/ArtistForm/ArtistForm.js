@@ -38,7 +38,7 @@ const ArtistForm = ({ onArtistFormSubmit, initialData }) => {
       </div>
 
       <button type='submit'>
-        {initialData ? 'Edit User' : 'Create User'}
+        {initialData ? 'Edit Artist' : 'Add Artist'}
       </button>
     </form>
 )
