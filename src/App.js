@@ -8,23 +8,33 @@ import UserPage from "./Pages/UserPage/UserPage"
 import SongsPage from "./Pages/SongsPage/SongsPage"
 import SongPage from "./Pages/SongPage/SongPage"
 import HomePage from "./Pages/HomePage/HomePage"
+import AlbumsPage from "./Pages/AlbumsPage/AlbumsPage"
+import AlbumPage from "./Pages/AlbumPage/AlbumPage"
+import ArtistsPage from "./Pages/ArtistsPage/ArtistsPage"
+import ArtistPage from "./Pages/ArtistPage/ArtistPage"
+import EditArtistPage from "./Pages/EditArtistPage/EditArtistPage"
+import CreateArtistPage from "./Pages/CreateArtistPage/CreateArtistPage"
+import CreateAlbumPage from "./Pages/CreateAlbumPage/CreateAlbumPage"
 
 function App() {
   return (
     <div className="App">
 
-      <header className='main-header'>
-        <Container classes='nav-container'>
-          <MainNav/>
-        </Container>
-      </header>
+      <MainNav />
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+        <Route path='/artists' element={<ArtistsPage/>}/>
+        <Route path='/artists/:id' element={<ArtistPage/>}/>
+        <Route path='/artists/edit/:id' element={<EditArtistPage/>}/>
+        <Route path='/artists/create' element={<CreateArtistPage/>}/>
         <Route path='/songs' element={<SongsPage/>}/>
         <Route path='/songs/:id' element={<SongPage/>}/>
         <Route path='/users' element={<UsersPage/>}/>
         <Route path='/users/:id' element={<UserPage/>}/>
+        <Route path='/albums' element={<AlbumsPage/>}/>
+        <Route path='/albums/:id' element={<AlbumPage/>}/>
+        <Route path='/albums/create/:id' element={<CreateAlbumPage/>}/>
 
         <Route path='*' element={
           <Container>
