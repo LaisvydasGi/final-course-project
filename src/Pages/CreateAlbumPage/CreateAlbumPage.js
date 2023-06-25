@@ -10,7 +10,7 @@ const CreateAlbumPage = () => {
   const artistId = useParams().id;
   const navigator = useNavigate();
 
-  const [artist, setArtist] = useState();
+  const [artist, setArtist] = useState(null);
 
   const [formErrorMessage, setFormErrorMessage] = useState('')
 
@@ -25,6 +25,7 @@ const CreateAlbumPage = () => {
 
   }, [artistId])
 
+  
   
 
   const createAlbumHandler = (newAlbumData) => {

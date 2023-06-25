@@ -44,6 +44,69 @@
       "imgUrl": "https://via.placeholder.com/150/771722",
       "released": "2023-04-06",
       "id": 4
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 5
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 6
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 7
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 8
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 9
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 10
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 11
+    },
+    {
+      "title": "",
+      "artistId": 2,
+      "imgUrl": "",
+      "released": "",
+      "id": 12
+    },
+    {
+      "title": "",
+      "artistId": 1,
+      "imgUrl": "",
+      "released": "",
+      "id": 13
     }
   ],
   "songs": [
@@ -88,6 +151,18 @@
       "title": " Aliquam commodo",
       "duration": "2:56",
       "albumId": 3
+    },
+    {
+      "title": "dasdasd",
+      "duration": "4:3",
+      "albumId": 1,
+      "id": 11
+    },
+    {
+      "title": "labas",
+      "duration": "4:3",
+      "albumId": 1,
+      "id": 12
     }
   ],
   "users": [

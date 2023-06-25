@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 
 import { SERVER_URL } from '../../config'
 import Container from '../../components/Container/Container'
+import SongForm from '../../components/SongForm/SongForm'
+import Card from '../../components/Card/Card'
 
 const AlbumPage = () => {
   const id = useParams().id;
+  const navigator = useNavigate();
 
   const [album, setAlbum] = useState(null);
+
+  const [addSongStatus, setAddSongStatus] = useState(false);
+
+  const viewToggleBtnHandler = () => setAddSongStatus(prevState => !prevState);
 
 
   useEffect(() => {
@@ -18,6 +25,19 @@ const AlbumPage = () => {
       .catch(err => console.log(err))
     
   }, [id])
+
+  const newSongHandler = (newSongData) => {
+    
+    axios.post(`${SERVER_URL}/songs`, newSongData)
+      .then(res => {
+        viewToggleBtnHandler()
+        navigator(`/albums/${id}`)
+      })
+      .catch(err => console.log(err.message))
+    ;
+  }
+
+  
 
 
   return (
@@ -48,6 +68,13 @@ const AlbumPage = () => {
 
         ))}
       </ul>
+      {addSongStatus ? (
+        <Card>
+          <button onClick={viewToggleBtnHandler}>Cancel</button>
+          <SongForm albumId={id} onSongFormSubmit={newSongHandler}/>
+        </Card>
+
+      ) : (<button onClick={viewToggleBtnHandler}>Add a song</button>)}
 
       <p>Released at: {album.released}</p>
     </Container>

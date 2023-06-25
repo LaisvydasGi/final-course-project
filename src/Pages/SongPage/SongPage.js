@@ -24,7 +24,7 @@ const SongPage = () => {
       
       <h2>{song.title}</h2>
       <div className="img-wrapper">
-        <img src={song.album.url}/>
+        <img src={song.album.imgUrl}/>
       </div>
 
       <p>Duration: {song.duration}</p>

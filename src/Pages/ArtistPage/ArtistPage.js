@@ -29,7 +29,7 @@ const ArtistPage = () => {
     return <BounceLoader color="#000000" />;
   }
 
-  const deleteBtnHandler = () => setDeleteStatus(true);
+  const deleteBtnHandler = () => setDeleteStatus(prevState => !prevState);
   const noDeleteBtnHandler = () => setDeleteStatus(false);
 
   const yesDeleteBtnHandler = () => {

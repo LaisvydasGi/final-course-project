@@ -16,6 +16,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
   //   }
   // }, [initialData])
 
+
   const formSubmitHandler = e => {
     e.preventDefault();
 
@@ -29,6 +30,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
     onAlbumFormSubmit(albumObj)
   }
 
+  
   return (
     <form onSubmit={formSubmitHandler} noValidate>
       <div className="form-control">
@@ -45,10 +47,6 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
         <label htmlFor='task-due-date'>Release date:</label>
         <input type='date' name='task-due-date' id='task-due-date' value={releaseDate} onChange={releaseDateHandler}/>
       </div>
-    
-      {initialData ? ('') : (
-        <button>Add a Song</button>
-      )}
 
       <button type='submit'>
         {initialData ? 'Edit Album' : 'Create Album'}
