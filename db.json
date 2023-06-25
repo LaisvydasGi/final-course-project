@@ -48,18 +48,6 @@
   ],
   "songs": [
     {
-      "title": "Aenean si SHIT",
-      "duration": "8:20",
-      "albumId": 2,
-      "id": 2
-    },
-    {
-      "id": 3,
-      "title": "faucibus bibendum",
-      "duration": "3:33",
-      "albumId": 3
-    },
-    {
       "id": 4,
       "title": "sagittis ullamcorper nunc",
       "duration": "3:12",
@@ -110,6 +98,10 @@
     {
       "id": 6,
       "username": "yo_Mamma69"
+    },
+    {
+      "username": "Labasddd",
+      "id": 7
     }
   ],
   "likedSongs": [

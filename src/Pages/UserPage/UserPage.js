@@ -51,6 +51,10 @@ const UserPage = () => {
   return (
     <Container>
 
+      <div>
+        <Link to={`/users/edit/${id}`}>Edit User Info</Link>
+      </div>
+
       <DeleteConfirm itemName={user.username} deleteFrom={`/users/${id}`} navigateTo={`/users/`} />
 
       <h2>{user.id}. {user.username} </h2>

@@ -31,7 +31,7 @@ const EditArtistPage = () => {
   }
 
 
-  const editUserHandler = (data) => {
+  const editArtistHandler = (data) => {
 
     axios.put(`${SERVER_URL}/artists/${id}`, data)
       .then(res => navigator(`/artists/${id}`))
@@ -45,7 +45,7 @@ const EditArtistPage = () => {
       {errorMessage ? (
         <p>{errorMessage}</p>
       ): (
-        <ArtistForm initialData={artist} onArtistFormSubmit={editUserHandler}/>
+        <ArtistForm initialData={artist} onArtistFormSubmit={editArtistHandler}/>
       )}
     </Container>
   )

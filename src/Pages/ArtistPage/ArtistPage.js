@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"

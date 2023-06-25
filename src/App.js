@@ -15,6 +15,8 @@ import ArtistPage from "./Pages/ArtistPage/ArtistPage"
 import EditArtistPage from "./Pages/EditArtistPage/EditArtistPage"
 import CreateArtistPage from "./Pages/CreateArtistPage/CreateArtistPage"
 import CreateAlbumPage from "./Pages/CreateAlbumPage/CreateAlbumPage"
+import CreateUserPage from "./Pages/CreateUserPage/CreateUserPage"
+import EditUserPage from "./Pages/EditUserPage/EditUserPage"
 
 function App() {
   return (
@@ -24,14 +26,20 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+
         <Route path='/artists' element={<ArtistsPage/>}/>
         <Route path='/artists/:id' element={<ArtistPage/>}/>
         <Route path='/artists/edit/:id' element={<EditArtistPage/>}/>
         <Route path='/artists/create' element={<CreateArtistPage/>}/>
+
         <Route path='/songs' element={<SongsPage/>}/>
         <Route path='/songs/:id' element={<SongPage/>}/>
+
         <Route path='/users' element={<UsersPage/>}/>
         <Route path='/users/:id' element={<UserPage/>}/>
+        <Route path='/users/edit/:id' element={<EditUserPage/>}/>
+        <Route path='/users/create' element={<CreateUserPage/>}/>
+
         <Route path='/albums' element={<AlbumsPage/>}/>
         <Route path='/albums/:id' element={<AlbumPage/>}/>
         <Route path='/albums/create/:id' element={<CreateAlbumPage/>}/>
