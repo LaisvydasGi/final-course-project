@@ -111,10 +111,10 @@
   ],
   "songs": [
     {
-      "id": 2,
-      "title": "Aenean sit amet",
-      "duration": "5:20",
-      "albumId": 2
+      "title": "Aenean si SHIT",
+      "duration": "8:20",
+      "albumId": 2,
+      "id": 2
     },
     {
       "id": 3,
@@ -163,6 +163,12 @@
       "duration": "4:3",
       "albumId": 1,
       "id": 12
+    },
+    {
+      "title": "dasdas",
+      "duration": "4:1",
+      "albumId": 1,
+      "id": 13
     }
   ],
   "users": [

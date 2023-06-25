@@ -13,9 +13,9 @@ const AlbumPage = () => {
 
   const [album, setAlbum] = useState(null);
 
-  const [addSongStatus, setAddSongStatus] = useState(false);
+  const [toggleForm, setToggleForm] = useState(false);
 
-  const viewToggleBtnHandler = () => setAddSongStatus(prevState => !prevState);
+  const toggleFormBtnHandler = () => setToggleForm(prevState => !prevState);
 
 
   useEffect(() => {
@@ -24,13 +24,14 @@ const AlbumPage = () => {
       .then(res => setAlbum(res.data))
       .catch(err => console.log(err))
     
-  }, [id])
+  }, [id, toggleForm])
+
 
   const newSongHandler = (newSongData) => {
     
     axios.post(`${SERVER_URL}/songs`, newSongData)
       .then(res => {
-        viewToggleBtnHandler()
+        toggleFormBtnHandler()
         navigator(`/albums/${id}`)
       })
       .catch(err => console.log(err.message))
@@ -38,7 +39,6 @@ const AlbumPage = () => {
   }
 
   
-
 
   return (
     album && 
@@ -68,13 +68,13 @@ const AlbumPage = () => {
 
         ))}
       </ul>
-      {addSongStatus ? (
+      {toggleForm ? (
         <Card>
-          <button onClick={viewToggleBtnHandler}>Cancel</button>
+          <button onClick={toggleFormBtnHandler}>Cancel</button>
           <SongForm albumId={id} onSongFormSubmit={newSongHandler}/>
         </Card>
 
-      ) : (<button onClick={viewToggleBtnHandler}>Add a song</button>)}
+      ) : (<button onClick={toggleFormBtnHandler}>Add a song</button>)}
 
       <p>Released at: {album.released}</p>
     </Container>

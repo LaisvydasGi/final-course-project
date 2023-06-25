@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const SongForm = ({ albumId, onSongFormSubmit }) => {
+const SongForm = ({ albumId, onSongFormSubmit, initialData }) => {
 
   const [title, setTitle] = useState('')
   const [min, setMin] = useState('')
@@ -11,8 +11,16 @@ const SongForm = ({ albumId, onSongFormSubmit }) => {
   const minHandler =  e => setMin(e.target.value);
   const secHandler =  e => setSec(e.target.value);
 
+  useEffect(() => {
+    if(initialData) {
+      setTitle(initialData.title)
+      setMin(initialData.duration.split(':')[0])
+      setSec(initialData.duration.split(':')[1])
+    }
+  }, [initialData])
+
   const formSubmitHandler = e => {
-    // e.preventDefault();
+    e.preventDefault();
 
     const songObj = {
       title,
