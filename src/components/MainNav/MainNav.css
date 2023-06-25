@@ -2,6 +2,12 @@
   border-bottom: 2px solid black;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav-list {
   list-style-type: none;
   display: flex;

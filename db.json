@@ -2,11 +2,13 @@
   "artists": [
     {
       "id": 1,
-      "name": "White Hot Chill Pipers"
+      "name": "White Hot Chill Pipers",
+      "description": "Aliquam nec fermentum risus. Phasellus et nisl enim. Vivamus faucibus leo augue, at cursus nunc convallis eu. Mauris dapibus diam et sagittis dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer augue quam, semper maximus rutrum sit amet, fermentum a ante. Aliquam erat volutpat."
     },
     {
       "id": 2,
-      "name": "Linking the Parks"
+      "name": "Linking the Parks",
+      "description": "Phasellus vel mi pharetra ipsum hendrerit aliquet et quis elit. Morbi commodo nec orci eleifend condimentum. Phasellus aliquet diam metus, at tristique ex tincidunt nec. Nulla sodales lacus sit amet mi consequat sagittis."
     }
   ],
   "albums": [

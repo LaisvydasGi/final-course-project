@@ -30,9 +30,10 @@ const ArtistPage = () => {
 
   return (
     <Container>
-      <button>Delete artist</button>
+      <button>Delete Artist</button>
+      <Link>Edit Artist Info</Link>
       <h1>{artist.name} </h1>
-      <p>: {artist.name}</p>
+      <p>{artist.description}</p>
       <h2>Popular songs:</h2>
       <h2>Discography</h2>
       <ul>

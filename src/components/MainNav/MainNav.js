@@ -5,17 +5,19 @@ import logo from './logo.svg'
 import Container from '../Container/Container'
 
 const MainNav = () => {
+
+  console.log(logo);
+
   return(
     <header className='main-header'>
       <Container classes='nav-container'>
         <nav className='main-nav'>
+          <div>
+            <NavLink to='/' className='nav-link'>
+              <img src={logo} className='nav-logo' alt='logo' width='40rem'/>
+            </NavLink>
+          </div>
           <ul className='nav-list'>
-
-            <li className='nav-item'>
-              <NavLink to='/' className='nav-link'>
-                <img src={logo} className='nav-logo' alt='logo'/>
-              </NavLink>
-            </li>
 
             <li className='nav-item'>
               <NavLink to='/artists' className='nav-link'>Artists</NavLink>
