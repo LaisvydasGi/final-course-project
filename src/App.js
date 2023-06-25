@@ -12,6 +12,7 @@ import AlbumsPage from "./Pages/AlbumsPage/AlbumsPage"
 import AlbumPage from "./Pages/AlbumPage/AlbumPage"
 import ArtistsPage from "./Pages/ArtistsPage/ArtistsPage"
 import ArtistPage from "./Pages/ArtistPage/ArtistPage"
+import EditArtistPage from "./Pages/EditArtistPage/EditArtistPage"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/artists' element={<ArtistsPage/>}/>
         <Route path='/artists/:id' element={<ArtistPage/>}/>
+        <Route path='/artists/edit/:id' element={<EditArtistPage/>}/>
         <Route path='/songs' element={<SongsPage/>}/>
         <Route path='/songs/:id' element={<SongPage/>}/>
         <Route path='/users' element={<UsersPage/>}/>

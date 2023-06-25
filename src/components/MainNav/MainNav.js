@@ -6,8 +6,6 @@ import Container from '../Container/Container'
 
 const MainNav = () => {
 
-  console.log(logo);
-
   return(
     <header className='main-header'>
       <Container classes='nav-container'>
