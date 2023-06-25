@@ -13,9 +13,7 @@ const SongPage = () => {
   useEffect(() => {
 
     axios.get(`${SERVER_URL}/songs/${id}?_expand=album`)
-      .then(res => {
-        setSong(res.data);
-      })
+      .then(res => setSong(res.data))
       .catch(err => console.log(err))
     
   }, [id])
@@ -23,10 +21,16 @@ const SongPage = () => {
   return (
     song && 
     <Container>
+      
       <h2>{song.title}</h2>
+      <div className="img-wrapper">
+        <img src={song.album.url}/>
+      </div>
 
       <p>Duration: {song.duration}</p>
+
       
+
       <p>Album:
         <Link to={`/albums/${song.albumId}`}>
           {song.album.title}

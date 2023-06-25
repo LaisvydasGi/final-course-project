@@ -5,7 +5,7 @@
       "name": "White Hot Chill Pipers"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Linking the Parks"
     }
   ],
@@ -14,7 +14,7 @@
       "id": 1,
       "title": "consectetur adipiscing elit",
       "artistId": 1,
-      "url": "https://via.placeholder.com/600/92c952",
+      "url": "https://via.placeholder.com/150/92c952",
       "released": "2002-06-18"
 
     },
@@ -22,7 +22,7 @@
       "id": 2,
       "title": "ipsum dolor",
       "artistId": 2,
-      "url": "https://via.placeholder.com/600/24f355",
+      "url": "https://via.placeholder.com/150/eaddca",
       "released": "2014-07-09"
 
     },
@@ -30,7 +30,7 @@
       "id": 3,
       "title": "Mauris rhoncus vehicula",
       "artistId": 2,
-      "url": "https://via.placeholder.com/600/771796",
+      "url": "https://via.placeholder.com/150/771796",
       "released": "2021-06-29"
     }
     

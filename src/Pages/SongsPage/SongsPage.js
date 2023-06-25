@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import axios, { AxiosHeaders } from "axios"
+import axios from "axios"
 
 import Container from "../../components/Container/Container"
 import { SERVER_URL } from "../../config"
@@ -23,7 +23,7 @@ const SongsPage = () => {
 
 
   return (
-    <Container>
+    <Container classes={'labas'}>
       <h1>All Songs</h1>
       <ul>
         {songs.map(song => (
@@ -33,7 +33,7 @@ const SongsPage = () => {
               {song.id}. {song.title}
             </Link>
           </li>
-          
+
         ))}
       </ul>
     </Container>
