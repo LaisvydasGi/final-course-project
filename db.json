@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Linking the Parks",
       "description": "Phasellus vel mi pharetra ipsum hendrerit aliquet et quis elit. Morbi commodo nec orci eleifend condimentum. Phasellus aliquet diam metus, at tristique ex tincidunt nec. Nulla sodales lacus sit amet mi consequat sagittis."
+    },
+    {
+      "name": "The Hair",
+      "description": "Suspendisse fermentum mauris nunc, at rutrum enim lacinia vitae. Aliquam a massa dolor. Donec at finibus nunc, sit amet tempor nisl.",
+      "id": 3
     }
   ],
   "albums": [

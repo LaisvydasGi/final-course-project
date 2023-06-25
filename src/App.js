@@ -13,6 +13,7 @@ import AlbumPage from "./Pages/AlbumPage/AlbumPage"
 import ArtistsPage from "./Pages/ArtistsPage/ArtistsPage"
 import ArtistPage from "./Pages/ArtistPage/ArtistPage"
 import EditArtistPage from "./Pages/EditArtistPage/EditArtistPage"
+import CreateArtistPage from "./Pages/CreateArtistPage/CreateArtistPage"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/artists' element={<ArtistsPage/>}/>
         <Route path='/artists/:id' element={<ArtistPage/>}/>
         <Route path='/artists/edit/:id' element={<EditArtistPage/>}/>
+        <Route path='/artists/create' element={<CreateArtistPage/>}/>
         <Route path='/songs' element={<SongsPage/>}/>
         <Route path='/songs/:id' element={<SongPage/>}/>
         <Route path='/users' element={<UsersPage/>}/>

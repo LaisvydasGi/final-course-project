@@ -26,6 +26,7 @@ const ArtistsPage = () => {
           
         ))}
       </ul>
+      <Link to='/artists/create'>Add New Artist</Link>
     </Container>
   )
 }
