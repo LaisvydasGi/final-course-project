@@ -14,21 +14,24 @@
       "id": 1,
       "title": "consectetur adipiscing elit",
       "artistId": 1,
-      "url": "https://via.placeholder.com/600/92c952"
+      "url": "https://via.placeholder.com/600/92c952",
+      "released": "2002-06-18"
 
     },
     {
       "id": 2,
       "title": "ipsum dolor",
       "artistId": 2,
-      "url": "https://via.placeholder.com/600/24f355"
+      "url": "https://via.placeholder.com/600/24f355",
+      "released": "2014-07-09"
 
     },
     {
       "id": 3,
       "title": "Mauris rhoncus vehicula",
       "artistId": 2,
-      "url": "https://via.placeholder.com/600/771796"
+      "url": "https://via.placeholder.com/600/771796",
+      "released": "2021-06-29"
     }
     
   ],
@@ -36,52 +39,62 @@
     {
       "id": 1,
       "title": "Suspendiss",
+      "duration": "2:42",
       "albumId": 1
     },
     {
       "id": 2,
       "title": "Aenean sit amet",
-      "albumId": 1
+      "duration": "5:20",
+      "albumId": 2
     },
     {
       "id": 3,
       "title": "faucibus bibendum",
-      "albumId": 1
+      "duration": "3:33",
+      "albumId": 3
     },
     {
       "id": 4,
       "title": "sagittis ullamcorper nunc",
-      "albumId": 1
+      "duration": "3:12",
+      "albumId": 2
     },
     {
       "id": 5,
       "title": "Praesent",
-      "albumId": 1
+      "duration": "3:52",
+      "albumId": 3
     },
     {
       "id": 6,
       "title": "elementum in ex",
+      "duration": "5:20",
       "albumId": 1
     },
     {
       "id": 7,
       "title": "porta nisi convallis",
+      "duration": "4:22",
       "albumId": 1
     },
     {
       "id": 8,
       "title": "a facilisis nisl mollis",
-      "albumId": 1
+      "duration": "6:55",
+      "albumId": 2
     },
     {
       "id": 9,
       "title": "Integer at nisi urna",
-      "albumId": 1
+      "duration": "1:35",
+      "albumId": 3
     },
     {
       "id": 10,
       "title": " Aliquam commodo",
-      "albumId": 1
+      "duration": "2:56",
+      "albumId": 3
     }
   ],
   "users": [

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { SERVER_URL } from "../../config"
 import axios from "axios"
+import Container from "../../components/Container/Container"
 
 const UserPage = () => {
   const id = useParams().id;
@@ -47,7 +48,7 @@ const UserPage = () => {
   }
 
   return (
-    <div>
+    <Container>
       <button>Delete User</button>
       {/* <Link to={`/users/edit/${user.id}`}>Edit User</Link> */}
       <h2>{user.id}. {user.username} </h2>
@@ -55,23 +56,25 @@ const UserPage = () => {
       <h3>Liked songs:</h3>
       <ul>
         {user && user.likedSongs.map((likedSong, index) => {
+          
           const song = songs.find(it => it.id === likedSong.songId)
 
           if(!song) {
             return ''
           } else {
             return (
+
               <li key={index}>
                 <Link to={`/songs/${song.id}`}>
                   {song.title}
                 </Link>
               </li>
+
             )
           }
         })}
       </ul>
-
-    </div>
+    </Container>
   )
 }
 
