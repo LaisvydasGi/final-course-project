@@ -12,6 +12,7 @@ const SongPage = () => {
   const navigator = useNavigate()
 
   const [song, setSong] = useState(null)
+  // const [users, setUsers] = useState(null)
 
   const [toggleForm, setToggleForm] = useState(false);
 
@@ -36,35 +37,58 @@ const SongPage = () => {
       .catch(err => console.log(err.message));
   }
 
+
+  // useEffect(() => {
+
+  //   axios.get(`${SERVER_URL}/users`)
+  //     .then(res => setUsers(res.data))
+  //     .catch(err => console.log(err))
+    
+  // }, [id, toggleForm])
+
+
   return (
     song && 
     <Container>
       {toggleForm ? (
-        <Card>
+        <div className='popup-form'>
           <button onClick={viewToggleBtnHandler}>Cancel</button>
-          <SongForm albumId={song.albumId} initialData={song} onSongFormSubmit={editSongHandler}/>
-        </Card>
+          <SongForm albumId={song.albumId} initialData={song} onSongFormSubmit={editSongHandler} />
+        </div>
       ) : (
         <div className="song-wrapper">
-          <button onClick={viewToggleBtnHandler}>Edit Song</button>
 
-          <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
-
-          <h2>{song.title}</h2>
-
-          <div className="img-wrapper">
-            <img src={song.album.imgUrl} alt='album cover'/>
+          <div className="song-edit-controls">
+            <button onClick={viewToggleBtnHandler}>Edit Song</button>
+            <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
           </div>
 
-          <p>Duration: {song.duration}</p>
+          <div className="song-item">
 
-          <p>Album:
-            <Link to={`/albums/${song.albumId}`}>
-              {song.album.title}
-            </Link>
-          </p>
+            <Card classes='artist-card large'>
 
-          <p>Released at: {song.album.released}</p>
+              <div className="img-wrapper">
+                <img src={song.album.imgUrl} alt='album cover'/>
+              </div>
+
+              <div className='title-wrapper'>
+                <span>Song</span>
+
+                <h2>{song.title}</h2>
+
+                <span>{song.duration}</span> 
+
+              </div>
+            </Card>
+
+            <div>
+              <span>From: <Link to={`/albums/${song.albumId}`}>{song.album.title}</Link></span>
+            </div>
+            <div>
+              <span>Released at: {song.album.released}</span>
+            </div>
+
+          </div>
         </div>
       )}
     </Container>

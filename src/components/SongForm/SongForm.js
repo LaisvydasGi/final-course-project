@@ -33,22 +33,21 @@ const SongForm = ({ albumId, onSongFormSubmit, initialData }) => {
 
   return (
       <form onSubmit={formSubmitHandler}>
-      <div className='form-control'>
-        <label htmlFor='title'>Title:</label>
-        <input type='text' name='title' id='title' value={title} onChange={titleHandler}/>
-      </div>
-      <div className='form-control'>
-        <label htmlFor='min'>Duration: ({min}:{sec})</label>
-        <input type='number' name='min' id='min' value={min} onChange={minHandler} />
-        <label htmlFor='min'>minutes</label>
-        <input type='number' name='sec' id='sec' value={sec} onChange={secHandler} />
-        <label htmlFor='sec'>seconds</label>
-      </div>
+        <div className='form-control'>
+          <label htmlFor='title'>Title:</label>
+          <input type='text' name='title' id='title' value={title} onChange={titleHandler} required/>
+        </div>
+        <div className='form-control'>
+          <label htmlFor='min'>Duration: ({min}:{sec})</label>
+          <input type='number' name='min' id='min' min="0" max="20" value={min} onChange={minHandler} required/>
+          <label htmlFor='min'>minutes</label>
+          <input type='number' name='sec' id='sec' min="0" max="59" value={sec} onChange={secHandler} />
+          <label htmlFor='sec'>seconds</label>
+        </div>
 
-      <div className='form-control'>
-        <button type='submit' name='submit' id='submit'>Save</button>
-      </div>
-
+        <div className='form-control'>
+          <button type='submit' name='submit' id='submit'>Save</button>
+        </div>
       </form>
   )
 }

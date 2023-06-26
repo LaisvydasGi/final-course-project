@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import axios from "axios"
 import { SERVER_URL } from "../../config"
 import Container from "../../components/Container/Container"
+import Card from "../../components/Card/Card"
 
 const UsersPage = () => {
   const [users, setUsers] = useState([]);
@@ -15,18 +16,33 @@ const UsersPage = () => {
   return (
     <Container>
       <h1>Users:</h1>
-      <ul>
+
+      <div className="btn-wrapper">
+        <Link to='/users/create' className="btn-medium">Add New User</Link>
+      </div>
+
+      <ul className="rows artist">
         {users.map(user => (
 
-          <li key={user.id}>
+          <li key={user.id} className="list-item artist">
             <Link to={`/users/${user.id}`}>
-              ({user.id}) {user.username}
+
+              <Card classes='artist-card small'>
+
+                <div className="image-wrapper thumbnail">
+                  <img className="thumbnail artist" src={user.picture.url} />
+                </div>
+
+                <div className="title-wrapper thumbnail">
+                  <span className="title">{user.name}</span>
+                </div>
+
+              </Card>
             </Link>
-          </li>
-          
+          </li> 
         ))}
       </ul>
-      <Link to='/users/create'>Add New User</Link>
+      
     </Container>
   )
 }

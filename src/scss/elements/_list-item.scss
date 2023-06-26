@@ -1,0 +1,10 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+
+
+li.list-item {
+
+  &.album {
+    height: 100%;
+  }
+}

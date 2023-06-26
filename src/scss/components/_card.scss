@@ -1,0 +1,77 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+@use '../variables/font-size' as fs;
+
+
+.card {
+  background-color: c.$xx-light;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: sp.$s;
+  display: flex;
+
+  &.artist-card {
+    align-items: center;
+    gap: sp.$l;
+
+    &.large {
+      box-shadow: none;
+      background-color: c.$xx-light;
+    }
+
+    &.small:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    }
+
+
+    & .title-wrapper{
+
+      & .title {
+        font-size: fs.$l;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.album-card {
+    flex-direction: column;
+
+    &:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    & .title-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      & .title {
+        font-size: fs.$l;
+        font-weight: 700;
+      }
+
+      & .subtitle {
+        font-size: fs.$s;
+      }
+    }
+  }
+  
+}
+
+.songs-grid-system {
+  display: grid;
+  grid-template-columns: 1fr 10fr 6fr 4fr;
+  // text-align: center;
+
+  &.banner {
+    padding: sp.$s;
+    border-bottom: 2px solid c.$xx-dark;
+    color: c.$x-dark;
+  }
+
+  &.list:hover {
+    background-color: c.$x-light;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+

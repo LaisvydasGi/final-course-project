@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom"
-import './MainNav.css';
 
 import logo from './logo.svg'
 import Container from '../Container/Container'
 
-const MainNav = () => {
+const MainHeader = () => {
 
   return(
     <header className='main-header'>
@@ -12,7 +11,7 @@ const MainNav = () => {
         <nav className='main-nav'>
           <div>
             <NavLink to='/' className='nav-link'>
-              <img src={logo} className='nav-logo' alt='logo' width='40rem'/>
+              <img src={logo} className='nav-logo' alt='logo' width='50rem'/>
             </NavLink>
           </div>
           <ul className='nav-list'>
@@ -40,4 +39,4 @@ const MainNav = () => {
   );
 }
 
-export default MainNav
+export default MainHeader

@@ -1,0 +1,31 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+@use '../variables/font-size' as fs;
+
+details {
+  padding: sp.$s;
+
+  &:hover {
+    background-color: c.$x-light;
+  }
+
+  & summary {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: fs.$m;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & p {
+    padding: sp.$s;
+  }
+}
+
+.index-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

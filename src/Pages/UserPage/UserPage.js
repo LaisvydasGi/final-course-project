@@ -4,6 +4,8 @@ import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"
 import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
+import Card from "../../components/Card/Card"
+import SongsBar from "../../components/SongsBar/SongsBar"
 
 const UserPage = () => {
   const id = useParams().id;
@@ -30,7 +32,7 @@ const UserPage = () => {
 
       user.likedSongs.forEach(item => {
 
-        axios.get(`${SERVER_URL}/songs/${item.songId}`)
+        axios.get(`${SERVER_URL}/songs/${item.songId}?_expand=album`)
           .then(res => {
             setSongs(prevState => {
 
@@ -50,36 +52,70 @@ const UserPage = () => {
 
   return (
     <Container>
-
-      <div>
-        <Link to={`/users/edit/${id}`}>Edit User Info</Link>
+      
+      <div className="btn-wrapper">
+        <Link to={`/users/edit/${id}`} className="btn-small">Edit Info</Link>
       </div>
 
-      <DeleteConfirm itemName={user.username} deleteFrom={`/users/${id}`} navigateTo={`/users/`} />
+      <DeleteConfirm itemName={user.name} deleteFrom={`/users/${id}`} navigateTo={`/users/`} />
+      
 
-      <h2>{user.id}. {user.username} </h2>
-      <p>Username: {user.username}</p>
-      <h3>Liked songs:</h3>
-      <ul>
-        {user && user.likedSongs.map((likedSong, index) => {
-          
-          const song = songs.find(it => it.id === likedSong.songId)
+      <Card classes='artist-card large'>
 
-          if(!song) {
-            return ''
-          } else {
-            return (
+        <div className="image-wrapper thumbnail">
+          <img className="medium artist" src={user.picture.url} alt='artist image'/>
+        </div>
 
-              <li key={index}>
-                <Link to={`/songs/${song.id}`}>
-                  {song.id}. {song.title}
-                </Link>
-              </li>
+        <div className="title-wrapper thumbnail">
+          <h1>{user.name}</h1>
+          <span>({user.login.username})</span>
+        </div>
 
-            )
-          }
-        })}
-      </ul>
+      </Card>
+
+      {songs.length > 0 && (
+        <>
+          <h3>Liked songs:</h3>
+
+          <SongsBar/>
+
+          <ul className="rows songs">
+            {user && user.likedSongs.map((likedSong, index) => {
+              
+              const song = songs.find(it => it.id === likedSong.songId)
+
+              if(!song) {
+                return ''
+              } else {
+                return (
+
+                  <li key={index} classes="list-item song">
+
+                    <Link to={`/songs/${song.id}`}>
+                      <Card classes='songs-grid-system list'>
+                        <span>{index+1}</span>
+
+                        <span>{song.title}</span>
+
+                        <span>{song.album.title}</span>
+
+                        <span>{song.duration}</span>
+                        
+                      </Card>
+                    </Link>
+                  </li>
+
+                )
+              }
+            })}
+          </ul>
+        </>
+      )}
+
+      <div>
+        <span>Last edited: {user.registered.date}</span>
+      </div>
+    
     </Container>
   )
 }

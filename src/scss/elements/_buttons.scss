@@ -1,0 +1,45 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+@use '../variables/font-size' as fs;
+
+button {
+  background-color: c.$alarm;
+  color: c.$xx-light;
+  font-size: fs.$s;
+
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: sp.$xs;
+  width: 100px;
+
+  &.btn-medium {
+    width: 200px;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  
+  & a {
+    background-color: c.$alarm;
+    color: c.$xx-light;
+    font-size: fs.$s;
+
+    text-decoration: none;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 5%;
+    
+    padding: sp.$xs;
+    
+    &.btn-small {
+      width: 100px;
+    }
+
+    &.btn-medium {
+      width: 200px;
+    }
+    
+  }
+}

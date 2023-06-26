@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
   const [title, setTitle] = useState('')
-  const [imgUrl, setImgUrl] = useState('')
+  const [imgUrl, setImgUrl] = useState('https://via.placeholder.com/150/771722')
   const [releaseDate, setReleaseDate] = useState('')
 
   const titleHandler =  e => setTitle(e.target.value);
@@ -36,7 +36,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
     <form onSubmit={formSubmitHandler} noValidate>
       <div className="form-control">
         <label htmlFor="title">Title:</label>
-        <input type="text" id="title" name="title" value={title} onChange={titleHandler}/>
+        <input type="text" id="title" name="title" value={title} onChange={titleHandler} required/>
       </div>
 
       <div className="form-control">
@@ -45,12 +45,12 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
       </div>
 
       <div className='form-control'>
-        <label htmlFor='task-due-date'>Release date:</label>
-        <input type='date' name='task-due-date' id='task-due-date' value={releaseDate} onChange={releaseDateHandler}/>
+        <label htmlFor='release-date'>Release date:</label>
+        <input type='date' name='release-date' id='release-date' value={releaseDate} onChange={releaseDateHandler} required/>
       </div>
 
       <button type='submit'>
-        {initialData ? 'Edit Album' : 'Create Album'}
+        {initialData ? 'Save' : 'Create Album'}
       </button>
     </form>
 )

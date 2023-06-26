@@ -1,0 +1,10 @@
+footer {
+  background-color: aquamarine;
+  border-top: 2px solid black;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

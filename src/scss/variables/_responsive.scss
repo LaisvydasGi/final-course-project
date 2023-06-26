@@ -1,0 +1,41 @@
+$x-large: 899px;
+$large: 799px;
+$medium: 549px;
+$small: 449px;
+$x-small: 399px;
+
+@mixin dark-mode {
+  @media screen and (prefers-color-scheme: light) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media screen and (max-width: $x-large) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin x-small {
+  @media screen and (max-width: $x-small) {
+    @content;
+  }
+}

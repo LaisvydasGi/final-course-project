@@ -1,6 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom"
 
-import MainNav from "./components/MainNav/MainNav"
+import MainHeader from "./components/MainHeader/MainHeader"
 import Container from "./components/Container/Container"
 
 import UsersPage from "./Pages/UsersPage/UsersPage"
@@ -17,12 +17,13 @@ import CreateArtistPage from "./Pages/CreateArtistPage/CreateArtistPage"
 import CreateAlbumPage from "./Pages/CreateAlbumPage/CreateAlbumPage"
 import CreateUserPage from "./Pages/CreateUserPage/CreateUserPage"
 import EditUserPage from "./Pages/EditUserPage/EditUserPage"
+import MainFooter from "./components/MainFooter/MainFooter"
 
 function App() {
   return (
     <div className="App">
 
-      <MainNav />
+      <MainHeader />
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
@@ -50,8 +51,10 @@ function App() {
             <Link to='/'>Go back to Home page</Link>
           </Container>
         } />
-
       </Routes>
+
+      <MainFooter />
+
     </div>
   );
 }

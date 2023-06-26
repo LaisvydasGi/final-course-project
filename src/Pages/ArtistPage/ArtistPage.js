@@ -31,42 +31,61 @@ const ArtistPage = () => {
 
   return (
     <Container>
-      <div>
-        <Link to={`/artists/edit/${id}`}>Edit Artist Info</Link>
+
+      <div className="btn-wrapper">
+        <Link to={`/artists/edit/${id}`} className="btn-small">Edit Info</Link>
       </div>
 
       <DeleteConfirm itemName={artist.name} deleteFrom={`/artists/${id}`} navigateTo={`/artists/`} />
 
       <div>
-        <h1>{artist.name} </h1>
-        <p>{artist.description}</p>
-      </div>
+        <Card classes='artist-card large'>
 
-      <div>
-        <h2>Popular songs:</h2>
+          <div className="image-wrapper thumbnail">
+            <img className="medium artist" src={artist.picture.imgUrl} alt='artist image'/>
+          </div>
 
+          <div className="title-wrapper thumbnail">
+            <h1>{artist.name}</h1>
+          </div>
+
+        </Card>
+
+        <details>
+          <summary className="about-artist">About the artist</summary>
+          <p>{artist.description}</p>
+        </details>
+        
       </div>
 
       <div>
         <h2>Discography</h2>
-        <Link to={`/albums/create/${id}`}>Add New Album</Link>
-        
-        <ul>
+
+        <div className="btn-wrapper">
+          <Link to={`/albums/create/${id}`} className="btn-medium">Add New Album</Link>
+        </div>
+
+        <ul className="columns album">
           {artist.albums.map(album => (
-            <li key={album.id} className="">
+
+            <li key={album.id} classes="list-item album">
               <Link to={`/albums/${album.id}`}>
-                <Card>
-                  <div>
-                    <img src={album.imgUrl} alt='album cover'/>
+
+                <Card classes='album-card small'>
+
+                  <div className="image-wrapper">
+                    <img className="album thumbnail" src={album.imgUrl} alt='album cover' />
                   </div>
 
-                  <div>
-                    {album.id}. {album.title}
+                  <div className="title-wrapper thumbnail">
+                    <span className="title album">{album.title}</span>
+                    <span className="subtitle">{album.released}</span>
                   </div>
 
                 </Card>
               </Link>
             </li>
+            
           ))}
         </ul>
 
