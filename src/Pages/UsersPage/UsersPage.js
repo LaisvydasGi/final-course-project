@@ -27,7 +27,7 @@ const UsersPage = () => {
               <Card classes='artist-card'>
 
                 <div className="image-wrapper thumbnail">
-                  <img className="thumbnail artist" src={user.picture.medium} />
+                  <img className="thumbnail artist" src={user.picture.url} />
                 </div>
 
                 <div className="title-wrapper thumbnail">

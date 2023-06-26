@@ -5,15 +5,15 @@ const UserForm = ({ onUserFormSubmit, initialData }) => {
   const [email, setEmail] = useState('')
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [date, setDate] = useState('')
   const [phone, setPhone] = useState('')
+  const [url, setUrl] = useState('https://via.placeholder.com/150/112233')
 
   const nameHandler =  e => setName(e.target.value);
   const emailHandler =  e => setEmail(e.target.value);
   const usernameHandler =  e => setUsername(e.target.value);
   const passwordHandler =  e => setPassword(e.target.value);
-  const dateHandler =  e => setDate(e.target.value);
   const phoneHandler =  e => setPhone(e.target.value);
+  const urlHandler =  e => setUrl(e.target.value);
 
   useEffect(() => {
     if(initialData) {
@@ -21,8 +21,8 @@ const UserForm = ({ onUserFormSubmit, initialData }) => {
       setEmail(initialData.email)
       setUsername(initialData.login.username)
       setPassword(initialData.login.password)
-      setDate(initialData.registered.date)
       setPhone(initialData.phone)
+      setUrl(initialData.picture.url)
     }
   }, [initialData])
 
@@ -45,9 +45,7 @@ const UserForm = ({ onUserFormSubmit, initialData }) => {
       },
       phone,
       picture: {
-        large: "https://randomuser.me/api/portraits/women/31.jpg",
-        medium: "https://randomuser.me/api/portraits/med/women/31.jpg",
-        thumbnail: "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+        url
       }
     }
 
@@ -77,8 +75,13 @@ const UserForm = ({ onUserFormSubmit, initialData }) => {
       </div>
 
       <div className="form-control">
-        <label htmlFor="phone">Phone No.:</label>
+        <label htmlFor="phone">Phone no.:</label>
         <input type="tel" id="phone" name="phone" value={phone} onChange={phoneHandler} required/>
+      </div>
+
+      <div className="form-control">
+        <label htmlFor="photo">Photo URL:</label>
+        <input type="url" id="photo" name="photo" value={url} onChange={urlHandler}/>
       </div>
 
       <button type='submit'>

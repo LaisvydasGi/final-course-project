@@ -41,13 +41,13 @@ const ArtistPage = () => {
 
         <Card classes='artist-card large'>
 
-        <div className="image-wrapper thumbnail">
-          <img className="medium artist" src={artist.picture.imgUrl} alt='artist image'/>
-        </div>
+          <div className="image-wrapper thumbnail">
+            <img className="medium artist" src={artist.picture.imgUrl} alt='artist image'/>
+          </div>
 
-        <div className="title-wrapper thumbnail">
-          <h1>{artist.name}</h1>
-        </div>
+          <div className="title-wrapper thumbnail">
+            <h1>{artist.name}</h1>
+          </div>
 
         </Card>
 

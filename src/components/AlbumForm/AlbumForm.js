@@ -36,7 +36,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
     <form onSubmit={formSubmitHandler} noValidate>
       <div className="form-control">
         <label htmlFor="title">Title:</label>
-        <input type="text" id="title" name="title" value={title} onChange={titleHandler}/>
+        <input type="text" id="title" name="title" value={title} onChange={titleHandler} required/>
       </div>
 
       <div className="form-control">
@@ -46,7 +46,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
 
       <div className='form-control'>
         <label htmlFor='release-date'>Release date:</label>
-        <input type='date' name='release-date' id='release-date' value={releaseDate} onChange={releaseDateHandler}/>
+        <input type='date' name='release-date' id='release-date' value={releaseDate} onChange={releaseDateHandler} required/>
       </div>
 
       <button type='submit'>

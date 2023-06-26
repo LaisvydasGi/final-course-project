@@ -323,11 +323,7 @@
         "date": "2023-06-26"
       },
       "phone": "04-57-81-44-67",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/women/31.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
-      },
+      "picture": {},
       "id": 1
     },
     {
@@ -342,9 +338,7 @@
       },
       "phone": "22256784",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/men/71.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+        "url": "https://randomuser.me/api/portraits/men/71.jpg"
       },
       "id": 2
     },
@@ -360,9 +354,7 @@
       },
       "phone": "01676 90407",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/31.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+        "url": "https://randomuser.me/api/portraits/women/31.jpg"
       },
       "id": 3
     },
@@ -378,9 +370,7 @@
       },
       "phone": "04-40-30-72-07",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/31.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+        "url": "https://randomuser.me/api/portraits/women/31.jpg"
       },
       "id": 4
     },
@@ -396,9 +386,7 @@
       },
       "phone": "07-143-025",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/95.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
+        "url": "https://randomuser.me/api/portraits/women/95.jpg"
       },
       "id": 5
     },
@@ -414,9 +402,7 @@
       },
       "phone": "03-96-29-74-96",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/men/89.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/89.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/89.jpg"
+        "url": "https://randomuser.me/api/portraits/men/89.jpg"
       },
       "id": 6
     }

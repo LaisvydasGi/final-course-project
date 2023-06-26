@@ -61,7 +61,7 @@ const UserPage = () => {
       <Card classes='artist-card large'>
 
         <div className="image-wrapper thumbnail">
-          <img className="medium artist" src={user.picture.large} alt='artist image'/>
+          <img className="medium artist" src={user.picture.url} alt='artist image'/>
         </div>
 
         <div className="title-wrapper thumbnail">
