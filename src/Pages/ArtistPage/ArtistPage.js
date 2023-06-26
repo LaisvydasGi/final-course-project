@@ -39,17 +39,16 @@ const ArtistPage = () => {
 
       <div>
         <h1>{artist.name} </h1>
-        <p>{artist.description}</p>
-      </div>
 
-      <div>
-        <h2>Popular songs:</h2>
-
+        <details>
+          <summary>About the artist</summary>
+          <p>{artist.description}</p>
+        </details>
+        
       </div>
 
       <div>
         <h2>Discography</h2>
-        <Link to={`/albums/create/${id}`}>Add New Album</Link>
         
         <ul>
           {artist.albums.map(album => (
@@ -61,7 +60,7 @@ const ArtistPage = () => {
                   </div>
 
                   <div>
-                    {album.id}. {album.title}
+                    <span>{album.title}</span>
                   </div>
 
                 </Card>
@@ -69,6 +68,8 @@ const ArtistPage = () => {
             </li>
           ))}
         </ul>
+
+        <Link to={`/albums/create/${id}`}>Add New Album</Link>
 
       </div>
       

@@ -1,5 +1,3 @@
-import './Container.css';
-
 function Container({ children, classes }) {
 
   return (

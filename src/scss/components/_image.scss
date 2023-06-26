@@ -1,0 +1,27 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+
+img.thumbnail {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+
+  &.artist {
+    border-radius: 50%;
+  }
+
+  &.album {
+    border-radius: 20%;
+  }
+}
+
+img.medium {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+
+  &.album {
+    border-radius: 10%;
+  }
+
+}

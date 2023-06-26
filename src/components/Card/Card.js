@@ -1,5 +1,3 @@
-import './Card.css';
-
 function Card({ children, classes }) {
   return (
     <div className={`card ${classes ? classes: ''}`}>

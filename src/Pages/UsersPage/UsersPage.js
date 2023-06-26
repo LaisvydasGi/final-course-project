@@ -15,12 +15,18 @@ const UsersPage = () => {
   return (
     <Container>
       <h1>Users:</h1>
-      <ul>
+      <ul className="users-list">
         {users.map(user => (
 
-          <li key={user.id}>
+          <li key={user.id} className="user-item">
             <Link to={`/users/${user.id}`}>
-              ({user.id}) {user.username}
+              <div className="user-thumbnail-wrapper">
+                <img className="user-thumbnail" src={user.picture.thumbnail} />
+              </div>
+              <div className="user-name-wrapper">
+              <span>{user.name.first} {user.name.last}</span>
+
+              </div>
             </Link>
           </li>
           

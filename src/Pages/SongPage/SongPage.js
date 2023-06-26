@@ -12,7 +12,7 @@ const SongPage = () => {
   const navigator = useNavigate()
 
   const [song, setSong] = useState(null)
-  const [users, setUsers] = useState(null)
+  // const [users, setUsers] = useState(null)
 
   const [toggleForm, setToggleForm] = useState(false);
 
@@ -38,13 +38,13 @@ const SongPage = () => {
   }
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    axios.get(`${SERVER_URL}/users`)
-      .then(res => setUsers(res.data))
-      .catch(err => console.log(err))
+  //   axios.get(`${SERVER_URL}/users`)
+  //     .then(res => setUsers(res.data))
+  //     .catch(err => console.log(err))
     
-  }, [id, toggleForm])
+  // }, [id, toggleForm])
 
 
   return (

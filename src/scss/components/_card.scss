@@ -1,0 +1,15 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+
+.card {
+  background-color: c.$light;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+
+  &.small-card {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: sp.$s;
+  }
+}

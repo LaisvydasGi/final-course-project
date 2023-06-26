@@ -1,0 +1,33 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+@use '../variables/responsive' as r;
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+  
+    @include r.dark-mode {
+      color: white;
+    }
+  }
+}
+
+ul {
+  display: flex;
+
+  &.rows {
+    flex-direction: column;
+    row-gap: sp.$m;
+  }
+
+  &.columns {
+    flex-direction: row;
+    gap: sp.$m;
+  }
+}
