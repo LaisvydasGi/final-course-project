@@ -5,6 +5,7 @@ import axios from "axios"
 import Container from "../../components/Container/Container"
 import { SERVER_URL } from "../../config"
 import Card from "../../components/Card/Card"
+import SongsBar from "../../components/SongsBar/SongsBar"
 
 const SongsPage = () => {
 
@@ -24,21 +25,16 @@ const SongsPage = () => {
   return (
     songs &&
     <Container>
-      <h1>All Songs</h1>
+      <h1>Songs:</h1>
 
-      <div className='songs-grid-system banner'>
-        <span>#</span>
-        <span>Title</span>
-        <span>Album</span>
-        <span>Duration</span>
-      </div>
+      <SongsBar/>
 
       <ul className="rows songs">
         {songs.map((song, index) => (
 
           <li key={index} classes="list-item song">
             <Link to={`/songs/${song.id}`}>
-                <Card classes='songs-grid-system'>
+                <Card classes='songs-grid-system list'>
                     <span>{index+1}</span>
                 
                     <span>{song.title}</span>

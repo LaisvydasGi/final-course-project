@@ -4,13 +4,12 @@
 
 
 .card {
-  background-color: c.$light;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
-  padding: sp.$m;
+  background-color: c.$xx-light;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: sp.$s;
   display: flex;
 
   &.artist-card {
-    flex-wrap: nowrap;
     align-items: center;
     gap: sp.$l;
 
@@ -18,6 +17,12 @@
       box-shadow: none;
       background-color: c.$xx-light;
     }
+
+    &.small:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    }
+
 
     & .title-wrapper{
 
@@ -30,6 +35,11 @@
 
   &.album-card {
     flex-direction: column;
+
+    &:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    }
 
     & .title-wrapper {
       display: flex;
@@ -45,6 +55,7 @@
       }
     }
   }
+  
 }
 
 .songs-grid-system {
@@ -53,6 +64,14 @@
   // text-align: center;
 
   &.banner {
-    padding: sp.$m;
+    padding: sp.$s;
+    border-bottom: 2px solid c.$xx-dark;
+    color: c.$x-dark;
+  }
+
+  &.list:hover {
+    background-color: c.$x-light;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
   }
 }
+

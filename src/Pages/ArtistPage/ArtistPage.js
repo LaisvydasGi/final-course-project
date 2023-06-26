@@ -31,14 +31,14 @@ const ArtistPage = () => {
 
   return (
     <Container>
-      <div>
-        <Link to={`/artists/edit/${id}`}>Edit Artist Info</Link>
+
+      <div className="btn-wrapper">
+        <Link to={`/artists/edit/${id}`} className="btn-small">Edit Info</Link>
       </div>
 
       <DeleteConfirm itemName={artist.name} deleteFrom={`/artists/${id}`} navigateTo={`/artists/`} />
 
       <div>
-
         <Card classes='artist-card large'>
 
           <div className="image-wrapper thumbnail">
@@ -61,7 +61,9 @@ const ArtistPage = () => {
       <div>
         <h2>Discography</h2>
 
-        <Link to={`/albums/create/${id}`}>Add New Album</Link>
+        <div className="btn-wrapper">
+          <Link to={`/albums/create/${id}`} className="btn-medium">Add New Album</Link>
+        </div>
 
         <ul className="columns album">
           {artist.albums.map(album => (

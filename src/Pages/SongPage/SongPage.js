@@ -51,43 +51,42 @@ const SongPage = () => {
     song && 
     <Container>
       {toggleForm ? (
-        <Card>
+        <div className='popup-form'>
           <button onClick={viewToggleBtnHandler}>Cancel</button>
-          <SongForm albumId={song.albumId} initialData={song} onSongFormSubmit={editSongHandler}/>
-        </Card>
+          <SongForm albumId={song.albumId} initialData={song} onSongFormSubmit={editSongHandler} />
+        </div>
       ) : (
         <div className="song-wrapper">
 
           <div className="song-edit-controls">
             <button onClick={viewToggleBtnHandler}>Edit Song</button>
-
             <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
           </div>
 
           <div className="song-item">
 
-            <div className="img-wrapper">
-              <img src={song.album.imgUrl} alt='album cover'/>
+            <Card classes='artist-card large'>
+
+              <div className="img-wrapper">
+                <img src={song.album.imgUrl} alt='album cover'/>
+              </div>
+
+              <div className='title-wrapper'>
+                <span>Song</span>
+
+                <h2>{song.title}</h2>
+
+                <span>{song.duration}</span> 
+
+              </div>
+            </Card>
+
+            <div>
+              <span>From: <Link to={`/albums/${song.albumId}`}>{song.album.title}</Link></span>
             </div>
-            <h2>{song.title}</h2>
-
-            {/* <div className="like-controls">
-              <button>Like Song</button>
-              <select>
-                <option>User 1</option>
-                <option>User 2</option>
-              </select>
-            </div> */}
-
-            <p>Duration: {song.duration}</p>
-
-            <p>Album:
-              <Link to={`/albums/${song.albumId}`}>
-                {song.album.title}
-              </Link>
-            </p>
-
-            <p>Released at: {song.album.released}</p>
+            <div>
+              <span>Released at: {song.album.released}</span>
+            </div>
 
           </div>
         </div>

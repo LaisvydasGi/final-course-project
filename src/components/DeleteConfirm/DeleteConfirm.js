@@ -22,13 +22,16 @@ const DeleteConfirm = ({ deleteFrom, navigateTo, itemName }) => {
 
   return (
     <div className='delete-btn-wrapper'>
-      <button onClick={deleteBtnHandler}>Delete</button>
+      <button onClick={deleteBtnHandler}>Remove</button>
       {deleteStatus ? (
-        <Card>
-          <h3>"{itemName}" will be deleted.</h3>
-          <span>Are you sure you want to proceed?</span>
-          <button onClick={yesDeleteBtnHandler}>Yes</button>
-          <button onClick={noDeleteBtnHandler}>No</button>
+        <Card classes='album-card'>
+          <h3>"{itemName}" will be removed.</h3>
+          <span>Do you want to proceed?</span>
+          <div>
+            <button onClick={yesDeleteBtnHandler}>Yes</button>
+            <button onClick={noDeleteBtnHandler}>No</button>
+
+          </div>
         </Card>
       ) : ''}
     </div>

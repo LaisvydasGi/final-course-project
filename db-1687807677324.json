@@ -3,8 +3,8 @@
     {
       "name": "The Mobile Junior Satisfaction",
       "description": "Faucibus leo augue, at cursus nunc convallis eu. Mauris dapibus diam et sagittis dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer augue quam, semper maximus rutrum sit amet, fermentum a ante. Aliquam erat volutpat.",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "The Mobile Junior Satisfaction"
       },
       "id": 1
@@ -12,8 +12,8 @@
     {
       "name": "Seldom Visit",
       "description": "Phasellus vel mi pharetra ipsum hendrerit aliquet et quis elit. Morbi commodo nec orci eleifend condimentum. Phasellus aliquet diam metus, at tristique ex tincidunt nec. Nulla sodales lacus sit amet mi consequat sagittis.",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Seldom Visit"
       },
       "id": 2
@@ -21,8 +21,8 @@
     {
       "name": "Robin Chapman",
       "description": "Suspendisse fermentum mauris nunc, at rutrum enim lacinia vitae. Aliquam a massa dolor. Donec at finibus nunc, sit amet tempor nisl.",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/1434625/pexels-photo-1434625.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/1434625/pexels-photo-1434625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Robin Chapman"
       },
       "id": 3
@@ -30,8 +30,8 @@
     {
       "name": "Sternly Cool",
       "description": "Praesent dignissim, orci quis tempor tempus, est orci consequat magna, finibus faucibus nunc augue malesuada velit. Cras",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Sternly Cool"
       },
       "id": 4
@@ -39,8 +39,8 @@
     {
       "name": "The Unit",
       "description": "Vivamus cursus nisl justo, ac facilisis nisl pretium sagittis. In quis massa in urna placerat vulputate. Nullam dignissim bibendum ex, ut tempor justo. Maecenas aliquam tristique nisi, eu eleifend quam tempor et. Vivamus cursus feugiat tortor eu aliquet. Pellentesque imperdiet augue eu dolor molestie vehicula. Mauris non sagittis ex. Aliquam sapien ligula, mattis imperdiet turpis eu, consectetur mollis purus. Vivamus mi lorem, hendrerit eget posuere vitae, aliquet porta mauris.",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/977971/pexels-photo-977971.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/977971/pexels-photo-977971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "The Unit"
       },
       "id": 5
@@ -48,8 +48,8 @@
     {
       "name": "Overhang Donkie",
       "description": "Aenean nulla lacus, maximus id purus eget, elementum faucibus velit. Morbi porttitor condimentum tincidunt. Pellentesque luctus sagittis ex, non ultrices augue egestas in.",
-      "cover": {
-        "imgUrl": "https://images.pexels.com/photos/417473/pexels-photo-417473.jpeg",
+      "picture": {
+        "imgUrl": "https://images.pexels.com/photos/417473/pexels-photo-417473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Overhang Donkie"
       },
       "id": 6
@@ -313,180 +313,96 @@
   ],
   "users": [
     {
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Côme",
-        "last": "Nicolas"
-      },
+      "name": "Côme Nicolas",
       "email": "come.nicolas@example.com",
       "login": {
-        "uuid": "2cdc5693-48df-49ff-8031-d13bb8be266a",
         "username": "bluebutterfly873",
         "password": "19781978"
       },
-      "dob": {
-        "date": "1949-08-22T02:08:51.703Z",
-        "age": 73
-      },
       "registered": {
-        "date": "2006-03-14T19:30:04.809Z",
-        "age": 17
+        "date": "2023-06-26"
       },
       "phone": "04-57-81-44-67",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/70.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/70.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/70.jpg"
-      },
+      "picture": {},
       "id": 1
     },
     {
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Carl",
-        "last": "Olsen"
-      },
+      "name": "Carl Olsen",
       "email": "carl.olsen@example.com",
       "login": {
-        "uuid": "2ad0bd3a-e622-44ec-9475-9fbb4339acd6",
         "username": "lazyfrog646",
         "password": "dakota"
       },
-      "dob": {
-        "date": "2001-05-08T01:36:20.504Z",
-        "age": 22
-      },
       "registered": {
-        "date": "2016-02-05T11:47:40.853Z",
-        "age": 7
+        "date": "2016-02-05"
       },
       "phone": "22256784",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/men/71.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+        "url": "https://randomuser.me/api/portraits/men/71.jpg"
       },
       "id": 2
     },
     {
-      "gender": "female",
-      "name": {
-        "title": "Ms",
-        "first": "Eva",
-        "last": "Fields"
-      },
+      "name": "Eva Fields",
       "email": "eva.fields@example.com",
       "login": {
-        "uuid": "53e7ddb5-2fb4-48d5-923b-a64a5acaf060",
         "username": "silvermouse471",
         "password": "chester1"
       },
-      "dob": {
-        "date": "1961-06-11T11:47:33.581Z",
-        "age": 62
-      },
       "registered": {
-        "date": "2015-07-11T07:33:39.631Z",
-        "age": 7
+        "date": "2015-07-11"
       },
       "phone": "01676 90407",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/31.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+        "url": "https://randomuser.me/api/portraits/women/31.jpg"
       },
       "id": 3
     },
     {
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Théo",
-        "last": "Moulin"
-      },
+      "name": "Théo Moulin",
       "email": "theo.moulin@example.com",
       "login": {
-        "uuid": "eba013f8-6bf5-4924-87f9-56feb6160c40",
         "username": "yellowmeercat391",
         "password": "iceman"
       },
-      "dob": {
-        "date": "1968-04-18T21:19:25.701Z",
-        "age": 55
-      },
       "registered": {
-        "date": "2021-10-04T13:39:07.004Z",
-        "age": 1
+        "date": "2023-06-26"
       },
       "phone": "04-40-30-72-07",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/men/91.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/91.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/91.jpg"
+        "url": "https://randomuser.me/api/portraits/women/31.jpg"
       },
       "id": 4
     },
     {
-      "gender": "female",
-      "name": {
-        "title": "Ms",
-        "first": "Olivia",
-        "last": "Pietila"
-      },
+      "name": "Olivia Pietila",
       "email": "olivia.pietila@example.com",
       "login": {
-        "uuid": "bbaaf865-0b0d-4572-b901-c38dfb275148",
         "username": "bigrabbit321",
         "password": "1951"
       },
-      "dob": {
-        "date": "1974-10-28T02:16:50.132Z",
-        "age": 48
-      },
       "registered": {
-        "date": "2018-08-30T02:44:49.822Z",
-        "age": 4
+        "date": "2018-08-30"
       },
       "phone": "07-143-025",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/95.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
+        "url": "https://randomuser.me/api/portraits/women/95.jpg"
       },
       "id": 5
     },
     {
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Timeo",
-        "last": "Dumas"
-      },
+      "name": "Timeo Dumas",
       "email": "timeo.dumas@example.com",
       "login": {
-        "uuid": "e34319a9-c682-4113-a221-c48e8fa4ec7f",
         "username": "blackbutterfly802",
-        "password": "borders",
-        "salt": "XzHkefol",
-        "md5": "38898d393e95fc1d3e474eca98add122",
-        "sha1": "c32955c1e3ba44c7b62f45e2381e4539903a1bd6",
-        "sha256": "adeb47b5bd60611da9c9fd67146c2a96700e0b09e597a63dc80a603ef134328d"
-      },
-      "dob": {
-        "date": "1960-09-28T21:26:13.148Z",
-        "age": 62
+        "password": "borders"
       },
       "registered": {
-        "date": "2012-12-25T03:43:16.000Z",
-        "age": 10
+        "date": "2012-12-25T03:43:16.000Z"
       },
       "phone": "03-96-29-74-96",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/men/89.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/89.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/89.jpg"
+        "url": "https://randomuser.me/api/portraits/men/89.jpg"
       },
       "id": 6
     }

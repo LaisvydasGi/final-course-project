@@ -17,14 +17,17 @@ const UsersPage = () => {
     <Container>
       <h1>Users:</h1>
 
-      <Link to='/users/create'>Add New User</Link>
+      <div className="btn-wrapper">
+        <Link to='/users/create' className="btn-medium">Add New User</Link>
+      </div>
+
       <ul className="rows artist">
         {users.map(user => (
 
           <li key={user.id} className="list-item artist">
             <Link to={`/users/${user.id}`}>
 
-              <Card classes='artist-card'>
+              <Card classes='artist-card small'>
 
                 <div className="image-wrapper thumbnail">
                   <img className="thumbnail artist" src={user.picture.url} />

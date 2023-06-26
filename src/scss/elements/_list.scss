@@ -22,12 +22,12 @@ ul {
   &.rows {
     display: flex;
     flex-direction: column;
-    row-gap: sp.$m;
+    row-gap: sp.$s;
   }
 
   &.columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: sp.$m;
   }
 }

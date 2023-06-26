@@ -1,0 +1,15 @@
+@use '../variables/spacing' as sp;
+@use '../variables/colors' as c;
+@use '../variables/font-size' as fs;
+
+form {
+  & .form-control {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+div.popup-form {
+  background-color: gainsboro;
+  padding: sp.$s;
+}

@@ -24,7 +24,7 @@ const AlbumsPage = () => {
   return (
     albums &&
     <Container>
-      <h1>Albums</h1>
+      <h1>Albums:</h1>
       <ul className="columns album">
         {albums.map(album => (
 

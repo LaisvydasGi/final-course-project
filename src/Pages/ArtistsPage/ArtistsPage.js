@@ -18,7 +18,7 @@ const ArtistsPage = () => {
       <h1>Artists:</h1>
 
       <div className="btn-wrapper">
-        <Link to='/artists/create' className="btn-small">Add New Artist</Link>
+        <Link to='/artists/create' className="btn-medium">Add New Artist</Link>
       </div>
       
       <ul className="rows artist">
@@ -27,7 +27,7 @@ const ArtistsPage = () => {
           <li key={artist.id} classes="list-item artist">
             <Link to={`/artists/${artist.id}`}>
 
-              <Card classes='artist-card'>
+              <Card classes='artist-card small'>
 
                 <div className="image-wrapper thumbnail">
                   <img className="thumbnail artist" src={artist.picture.imgUrl}  width='100px' alt='artist image'/>

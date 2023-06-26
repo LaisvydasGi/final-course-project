@@ -8,6 +8,7 @@ import SongForm from '../../components/SongForm/SongForm'
 import Card from '../../components/Card/Card'
 import AlbumForm from '../../components/AlbumForm/AlbumForm'
 import DeleteConfirm from '../../components/DeleteConfirm/DeleteConfirm'
+import SongsBar from '../../components/SongsBar/SongsBar'
 
 const AlbumPage = () => {
   const id = useParams().id;
@@ -61,54 +62,71 @@ const AlbumPage = () => {
     <Container>
       {toggleAlbumForm ? (
         
-        <Card>
+        <div className='popup-form'>
           <button onClick={toggleAlbumFormBtnHandler}>Cancel</button>
           <AlbumForm artistId={album.artistId} initialData={album} onAlbumFormSubmit={editAlbumHandler}/>
-        </Card>
+        </div>
 
       ) : (
         <div className='album-wrapper'>
 
           <div className='edit-btn-wrapper'>
-            <button onClick={toggleAlbumFormBtnHandler}>Edit Album Info</button>
+            <button onClick={toggleAlbumFormBtnHandler}>Edit Info</button>
           </div>
 
           <DeleteConfirm itemName={album.title} deleteFrom={`/albums/${id}`} navigateTo={`/artists/${album.artistId}`} />
 
-          <div className="img-wrapper">
-            <img src={album.imgUrl} alt='album cover'/>
-          </div>
-          <div className='title-wrapper'>
+          <Card classes='artist-card large'>
 
-            <span>Album</span>
+            <div className="img-wrapper">
+              <img src={album.imgUrl} alt='album cover'/>
+            </div>
 
-            <h2>{album.title}</h2>
+            <div className='title-wrapper'>
+              {album.songs.length > 1 ? <span>Album</span> : <span>Single</span>}
 
-            <Link to={`/artists/${album.artistId}`}>
-              {album.artist.name}
-            </Link>
+              <h2>{album.title}</h2>
 
-          </div>
+              <Link to={`/artists/${album.artistId}`}>
+                {album.artist.name}
+              </Link>
+            </div>
+          </Card>
 
-          <ul>
-            {album.songs.map((song, index) => (
-              <li key={index}>
-                <Link to={`/songs/${song.id}`}>
-                  {index+1}. {song.title}
-                </Link>
-              </li>
+          {album.songs.length > 0 && (
+            <>
+              <SongsBar/>
 
-            ))}
-          </ul>
+              <ul className="rows songs">
+                {album.songs.map((song, index) => (
+                  <li key={index}>
+                    <Link to={`/songs/${song.id}`}>
+                      <Card classes='songs-grid-system list'>
+                        <span>{index+1}</span>
+                        
+                        <span>{song.title}</span>
+                      
+                        <span>{album.title}</span>
+                    
+                        <span>{song.duration}</span>
+                      </Card>
+                    </Link>
+                  </li>
+
+                ))}
+              </ul>
+            </>
+          )}
 
           {toggleSongForm ? (
 
-            <Card>
+            <div className='popup-form'>
               <button onClick={toggleSongFormBtnHandler}>Cancel</button>
               <SongForm albumId={id} onSongFormSubmit={newSongHandler}/>
-            </Card>
+            </div>
 
-          ) : (<button onClick={toggleSongFormBtnHandler}>Add a song</button>)}
+          ) : (
+          <button onClick={toggleSongFormBtnHandler} className='btn-medium'>Add New Song</button>)}
 
           <p>Released at: {album.released}</p>
         </div>

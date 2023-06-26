@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
   const [title, setTitle] = useState('')
-  const [imgUrl, setImgUrl] = useState('')
+  const [imgUrl, setImgUrl] = useState('https://via.placeholder.com/150/771722')
   const [releaseDate, setReleaseDate] = useState('')
 
   const titleHandler =  e => setTitle(e.target.value);
@@ -50,7 +50,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
       </div>
 
       <button type='submit'>
-        {initialData ? 'Edit Album' : 'Create Album'}
+        {initialData ? 'Save' : 'Create Album'}
       </button>
     </form>
 )
