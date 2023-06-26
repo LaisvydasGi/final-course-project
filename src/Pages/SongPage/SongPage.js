@@ -12,6 +12,7 @@ const SongPage = () => {
   const navigator = useNavigate()
 
   const [song, setSong] = useState(null)
+  const [users, setUsers] = useState(null)
 
   const [toggleForm, setToggleForm] = useState(false);
 
@@ -36,6 +37,16 @@ const SongPage = () => {
       .catch(err => console.log(err.message));
   }
 
+
+  useEffect(() => {
+
+    axios.get(`${SERVER_URL}/users`)
+      .then(res => setUsers(res.data))
+      .catch(err => console.log(err))
+    
+  }, [id, toggleForm])
+
+
   return (
     song && 
     <Container>
@@ -46,25 +57,39 @@ const SongPage = () => {
         </Card>
       ) : (
         <div className="song-wrapper">
-          <button onClick={viewToggleBtnHandler}>Edit Song</button>
 
-          <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
+          <div className="song-edit-controls">
+            <button onClick={viewToggleBtnHandler}>Edit Song</button>
 
-          <h2>{song.title}</h2>
-
-          <div className="img-wrapper">
-            <img src={song.album.imgUrl} alt='album cover'/>
+            <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
           </div>
 
-          <p>Duration: {song.duration}</p>
+          <div className="song-item">
 
-          <p>Album:
-            <Link to={`/albums/${song.albumId}`}>
-              {song.album.title}
-            </Link>
-          </p>
+            <div className="img-wrapper">
+              <img src={song.album.imgUrl} alt='album cover'/>
+            </div>
+            <h2>{song.title}</h2>
 
-          <p>Released at: {song.album.released}</p>
+            {/* <div className="like-controls">
+              <button>Like Song</button>
+              <select>
+                <option>User 1</option>
+                <option>User 2</option>
+              </select>
+            </div> */}
+
+            <p>Duration: {song.duration}</p>
+
+            <p>Album:
+              <Link to={`/albums/${song.albumId}`}>
+                {song.album.title}
+              </Link>
+            </p>
+
+            <p>Released at: {song.album.released}</p>
+
+          </div>
         </div>
       )}
     </Container>

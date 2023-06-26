@@ -10,7 +10,6 @@
       "id": 1
     },
     {
-      
       "name": "Seldom Visit",
       "description": "Phasellus vel mi pharetra ipsum hendrerit aliquet et quis elit. Morbi commodo nec orci eleifend condimentum. Phasellus aliquet diam metus, at tristique ex tincidunt nec. Nulla sodales lacus sit amet mi consequat sagittis.",
       "cover": {
@@ -27,7 +26,6 @@
         "imgAlt": "Robin Chapman"
       },
       "id": 3
-      
     },
     {
       "name": "Sternly Cool",
