@@ -23,7 +23,7 @@ const ArtistsPage = () => {
 
             <Link to={`/artists/${artist.id}`}>
 
-              <Card classes='small-card'>
+              <Card classes='artist-card'>
 
                 <div className="image-wrapper thumbnail">
                   <img className="thumbnail artist" src={artist.picture.imgUrl}  width='100px' alt='artist image'/>

@@ -1,7 +1,10 @@
 @use 'components/card';
 @use 'components/container';
 
+@use 'components/header';
+@use 'components/footer';
+
 @use 'components/image';
 
-@use 'components/list';
-@use 'components/list-item';
+@use 'elements/list';
+@use 'elements/list-item';

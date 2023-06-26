@@ -25,21 +25,21 @@ const AlbumsPage = () => {
     albums &&
     <Container>
       <h1>Albums</h1>
-      <ul className="rows album">
+      <ul className="columns album">
         {albums.map(album => (
 
           <li key={album.id} classes="list-item album">
 
             <Link to={`/albums/${album.id}`}>
 
-              <Card classes='thumbnail-card'>
+              <Card classes='album-card'>
 
-                <div className="image-wrapper thumbnail">
-                  <img className="thumbnail album" src={album.imgUrl} alt='album cover' />
+                <div className="image-wrapper">
+                  <img className="album thumbnail" src={album.imgUrl} alt='album cover' />
                 </div>
 
                 <div className="title-wrapper thumbnail">
-                  <span className="title artist">{album.title}</span>
+                  <span className="title album">{album.title}</span>
                   <span className="subtitle">{album.artist.name}</span>
                 </div>
 

@@ -19,15 +19,15 @@ ul {
 }
 
 ul {
-  display: flex;
-
   &.rows {
+    display: flex;
     flex-direction: column;
     row-gap: sp.$m;
   }
 
   &.columns {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: sp.$m;
   }
 }

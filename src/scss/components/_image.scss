@@ -3,14 +3,15 @@
 
 img.thumbnail {
   object-fit: cover;
-  width: 100px;
-  height: 100px;
 
   &.artist {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
   }
 
   &.album {
+    width: 100%;
     border-radius: 20%;
   }
 }
