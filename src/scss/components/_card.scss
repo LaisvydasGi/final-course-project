@@ -7,16 +7,28 @@
   background-color: c.$light;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
   padding: sp.$m;
+  display: flex;
 
   &.artist-card {
-    display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: sp.$s;
+    gap: sp.$l;
+
+    &.large {
+      box-shadow: none;
+      background-color: c.$xx-light;
+    }
+
+    & .title-wrapper{
+
+      & .title {
+        font-size: fs.$l;
+        font-weight: 700;
+      }
+    }
   }
 
   &.album-card {
-    display: flex;
     flex-direction: column;
 
     & .title-wrapper {

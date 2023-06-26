@@ -4,7 +4,7 @@
       "name": "The Mobile Junior Satisfaction",
       "description": "Faucibus leo augue, at cursus nunc convallis eu. Mauris dapibus diam et sagittis dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer augue quam, semper maximus rutrum sit amet, fermentum a ante. Aliquam erat volutpat.",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "The Mobile Junior Satisfaction"
       },
       "id": 1
@@ -14,7 +14,7 @@
       "name": "Seldom Visit",
       "description": "Phasellus vel mi pharetra ipsum hendrerit aliquet et quis elit. Morbi commodo nec orci eleifend condimentum. Phasellus aliquet diam metus, at tristique ex tincidunt nec. Nulla sodales lacus sit amet mi consequat sagittis.",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Seldom Visit"
       },
       "id": 2
@@ -23,7 +23,7 @@
       "name": "Robin Chapman",
       "description": "Suspendisse fermentum mauris nunc, at rutrum enim lacinia vitae. Aliquam a massa dolor. Donec at finibus nunc, sit amet tempor nisl.",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/1434625/pexels-photo-1434625.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/1434625/pexels-photo-1434625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Robin Chapman"
       },
       "id": 3
@@ -33,7 +33,7 @@
       "name": "Sternly Cool",
       "description": "Praesent dignissim, orci quis tempor tempus, est orci consequat magna, finibus faucibus nunc augue malesuada velit. Cras",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Sternly Cool"
       },
       "id": 4
@@ -42,7 +42,7 @@
       "name": "The Unit",
       "description": "Vivamus cursus nisl justo, ac facilisis nisl pretium sagittis. In quis massa in urna placerat vulputate. Nullam dignissim bibendum ex, ut tempor justo. Maecenas aliquam tristique nisi, eu eleifend quam tempor et. Vivamus cursus feugiat tortor eu aliquet. Pellentesque imperdiet augue eu dolor molestie vehicula. Mauris non sagittis ex. Aliquam sapien ligula, mattis imperdiet turpis eu, consectetur mollis purus. Vivamus mi lorem, hendrerit eget posuere vitae, aliquet porta mauris.",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/977971/pexels-photo-977971.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/977971/pexels-photo-977971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "The Unit"
       },
       "id": 5
@@ -51,7 +51,7 @@
       "name": "Overhang Donkie",
       "description": "Aenean nulla lacus, maximus id purus eget, elementum faucibus velit. Morbi porttitor condimentum tincidunt. Pellentesque luctus sagittis ex, non ultrices augue egestas in.",
       "picture": {
-        "imgUrl": "https://images.pexels.com/photos/417473/pexels-photo-417473.jpeg",
+        "imgUrl": "https://images.pexels.com/photos/417473/pexels-photo-417473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "imgAlt": "Overhang Donkie"
       },
       "id": 6

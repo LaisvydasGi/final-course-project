@@ -20,7 +20,6 @@ const ArtistsPage = () => {
         {artists.map(artist => (
 
           <li key={artist.id} classes="list-item artist">
-
             <Link to={`/artists/${artist.id}`}>
 
               <Card classes='artist-card'>
@@ -30,7 +29,7 @@ const ArtistsPage = () => {
                 </div>
 
                 <div className="title-wrapper thumbnail">
-                  <span>{artist.name}</span>
+                  <span className="title">{artist.name}</span>
                 </div>
 
               </Card>

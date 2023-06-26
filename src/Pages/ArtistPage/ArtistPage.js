@@ -38,10 +38,21 @@ const ArtistPage = () => {
       <DeleteConfirm itemName={artist.name} deleteFrom={`/artists/${id}`} navigateTo={`/artists/`} />
 
       <div>
-        <h1>{artist.name} </h1>
+
+        <Card classes='artist-card large'>
+
+        <div className="image-wrapper thumbnail">
+          <img className="medium artist" src={artist.picture.imgUrl} alt='artist image'/>
+        </div>
+
+        <div className="title-wrapper thumbnail">
+          <h1>{artist.name}</h1>
+        </div>
+
+        </Card>
 
         <details>
-          <summary>About the artist</summary>
+          <summary className="about-artist">About the artist</summary>
           <p>{artist.description}</p>
         </details>
         
@@ -49,27 +60,32 @@ const ArtistPage = () => {
 
       <div>
         <h2>Discography</h2>
-        
-        <ul>
+
+        <Link to={`/albums/create/${id}`}>Add New Album</Link>
+
+        <ul className="columns album">
           {artist.albums.map(album => (
-            <li key={album.id} className="">
+
+            <li key={album.id} classes="list-item album">
               <Link to={`/albums/${album.id}`}>
-                <Card>
-                  <div>
-                    <img src={album.imgUrl} alt='album cover'/>
+
+                <Card classes='album-card small'>
+
+                  <div className="image-wrapper">
+                    <img className="album thumbnail" src={album.imgUrl} alt='album cover' />
                   </div>
 
-                  <div>
-                    <span>{album.title}</span>
+                  <div className="title-wrapper thumbnail">
+                    <span className="title album">{album.title}</span>
+                    <span className="subtitle">{album.released}</span>
                   </div>
 
                 </Card>
               </Link>
             </li>
+            
           ))}
         </ul>
-
-        <Link to={`/albums/create/${id}`}>Add New Album</Link>
 
       </div>
       

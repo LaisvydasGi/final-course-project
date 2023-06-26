@@ -29,7 +29,6 @@ const AlbumsPage = () => {
         {albums.map(album => (
 
           <li key={album.id} classes="list-item album">
-
             <Link to={`/albums/${album.id}`}>
 
               <Card classes='album-card'>
