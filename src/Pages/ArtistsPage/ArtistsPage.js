@@ -16,6 +16,11 @@ const ArtistsPage = () => {
   return (
     <Container>
       <h1>Artists:</h1>
+
+      <div className="btn-wrapper">
+        <Link to='/artists/create' className="btn-small">Add New Artist</Link>
+      </div>
+      
       <ul className="rows artist">
         {artists.map(artist => (
 
@@ -38,9 +43,7 @@ const ArtistsPage = () => {
           
         ))}
       </ul>
-      <div className="btn-wrapper">
-        <Link to='/artists/create' className="btn-small">Add New Artist</Link>
-      </div>
+
     </Container>
   )
 }

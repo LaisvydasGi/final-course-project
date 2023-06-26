@@ -4,6 +4,7 @@ import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"
 import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
+import Card from "../../components/Card/Card"
 
 const UserPage = () => {
   const id = useParams().id;
@@ -57,8 +58,19 @@ const UserPage = () => {
 
       <DeleteConfirm itemName={user.username} deleteFrom={`/users/${id}`} navigateTo={`/users/`} />
 
-      <h2>{user.id}. {user.username} </h2>
-      <p>Username: {user.username}</p>
+      <Card classes='artist-card large'>
+
+        <div className="image-wrapper thumbnail">
+          <img className="medium artist" src={user.picture.large} alt='artist image'/>
+        </div>
+
+        <div className="title-wrapper thumbnail">
+          <h1>{user.name}</h1>
+          <span>({user.login.username})</span>
+        </div>
+
+      </Card>
+
       <h3>Liked songs:</h3>
       <ul>
         {user && user.likedSongs.map((likedSong, index) => {
@@ -80,6 +92,11 @@ const UserPage = () => {
           }
         })}
       </ul>
+
+      <div>
+        <span>Last edited: {user.registered.date}</span>
+      </div>
+    
     </Container>
   )
 }

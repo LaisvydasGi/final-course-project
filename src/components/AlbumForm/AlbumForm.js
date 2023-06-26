@@ -45,8 +45,8 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
       </div>
 
       <div className='form-control'>
-        <label htmlFor='task-due-date'>Release date:</label>
-        <input type='date' name='task-due-date' id='task-due-date' value={releaseDate} onChange={releaseDateHandler}/>
+        <label htmlFor='release-date'>Release date:</label>
+        <input type='date' name='release-date' id='release-date' value={releaseDate} onChange={releaseDateHandler}/>
       </div>
 
       <button type='submit'>

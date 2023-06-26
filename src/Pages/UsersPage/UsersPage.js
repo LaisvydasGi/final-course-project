@@ -31,7 +31,7 @@ const UsersPage = () => {
                 </div>
 
                 <div className="title-wrapper thumbnail">
-                  <span className="title">{user.name.first} {user.name.last}</span>
+                  <span className="title">{user.name}</span>
                 </div>
 
               </Card>
