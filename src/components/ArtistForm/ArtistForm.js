@@ -34,7 +34,7 @@ const ArtistForm = ({ onArtistFormSubmit, initialData }) => {
   }
 
   return (
-    <form onSubmit={formSubmitHandler} noValidate>
+    <form onSubmit={formSubmitHandler}>
       <div className="form-control">
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" value={name} onChange={nameHandler} required/>

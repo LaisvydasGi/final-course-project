@@ -68,11 +68,17 @@
     padding: sp.$s;
     border-bottom: 2px solid c.$xx-dark;
     color: c.$x-dark;
+
   }
 
   &.list:hover {
     background-color: c.$x-light;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  & .song-length {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 

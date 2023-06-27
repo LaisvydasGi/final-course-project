@@ -41,7 +41,7 @@ const SongForm = ({ albumId, onSongFormSubmit, initialData }) => {
           <label htmlFor='min'>Duration: ({min}:{sec})</label>
           <input type='number' name='min' id='min' min="0" max="20" value={min} onChange={minHandler} required/>
           <label htmlFor='min'>minutes</label>
-          <input type='number' name='sec' id='sec' min="0" max="59" value={sec} onChange={secHandler} />
+          <input type='number' name='sec' id='sec' min="0" max="59" value={sec} onChange={secHandler} required/>
           <label htmlFor='sec'>seconds</label>
         </div>
 

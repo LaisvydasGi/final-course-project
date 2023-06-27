@@ -33,7 +33,7 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
 
   
   return (
-    <form onSubmit={formSubmitHandler} noValidate>
+    <form onSubmit={formSubmitHandler}>
       <div className="form-control">
         <label htmlFor="title">Title:</label>
         <input type="text" id="title" name="title" value={title} onChange={titleHandler} required/>

@@ -95,7 +95,7 @@ const AlbumPage = () => {
 
           {album.songs.length > 0 && (
             <>
-              <SongsBar/>
+              <SongsBar inAlbum={true} />
 
               <ul className="rows songs">
                 {album.songs.map((song, index) => (
@@ -106,9 +106,9 @@ const AlbumPage = () => {
                         
                         <span>{song.title}</span>
                       
-                        <span>{album.title}</span>
+                        <span></span>
                     
-                        <span>{song.duration}</span>
+                        <span className='song-length'>{song.duration}</span>
                       </Card>
                     </Link>
                   </li>
