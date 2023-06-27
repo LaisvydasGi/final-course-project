@@ -135,10 +135,10 @@
       "id": 12
     },
     {
-      "title": "s",
+      "title": "dasdasd",
       "artistId": 1,
       "imgUrl": "https://via.placeholder.com/150/771722",
-      "released": "",
+      "released": "2023-06-10",
       "id": 13
     }
   ],
@@ -246,12 +246,6 @@
       "id": 17
     },
     {
-      "title": "Nunc ultrices",
-      "duration": "1:35",
-      "albumId": 8,
-      "id": 18
-    },
-    {
       "title": "Pellentesqu",
       "duration": "6:55",
       "albumId": 9,
@@ -321,7 +315,7 @@
         "password": "19781978"
       },
       "registered": {
-        "date": "2023-06-26"
+        "date": "2023-06-27"
       },
       "phone": "04-57-81-44-67",
       "picture": {

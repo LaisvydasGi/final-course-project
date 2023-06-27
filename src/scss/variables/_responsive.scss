@@ -5,7 +5,7 @@ $small: 449px;
 $x-small: 399px;
 
 @mixin dark-mode {
-  @media screen and (prefers-color-scheme: dark) {
+  @media screen and (prefers-color-scheme: light) {
     @content;
   }
 }

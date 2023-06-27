@@ -26,8 +26,6 @@ const CreateAlbumPage = () => {
   }, [artistId])
 
   
-  
-
   const createAlbumHandler = (newAlbumData) => {
 
     axios.post(`${SERVER_URL}/albums`, newAlbumData)
