@@ -1,6 +1,7 @@
 @use 'variables/responsive' as r;
 @use 'variables/colors' as c;
 @use 'variables/font-size' as fs;
+@use 'variables/spacing' as sp;
 
 *,
 *::before,
@@ -24,7 +25,6 @@ body {
     background-color: c.$xx-dark;
     color: c.$xx-light;
   }
-
 }
 
 code {
@@ -34,14 +34,23 @@ code {
 
 h1 {
   font-size: fs.$xxl;
+  margin: 0;
+  padding-top: sp.$xs;
+  padding-bottom: sp.$s;
 }
 
 h2 {
   font-size: fs.$xl;
+  margin: 0;
+  padding-top: sp.$xs;
+  padding-bottom: sp.$s;
 }
 
 h3 {
   font-size: fs.$l;
+  margin: 0;
+  padding-top: sp.$xs;
+  padding-bottom: sp.$s;
 }
 
 p, span {

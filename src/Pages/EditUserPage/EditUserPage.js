@@ -45,7 +45,10 @@ const EditUserPage = () => {
       {errorMessage ? (
         <p>{errorMessage}</p>
       ): (
-        <UserForm initialData={user} onUserFormSubmit={editUserHandler}/>
+        <>
+          <h2>Edit user info</h2>
+          <UserForm initialData={user} onUserFormSubmit={editUserHandler}/>
+        </>
       )}
     </Container>
   )

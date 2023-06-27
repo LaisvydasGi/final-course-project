@@ -32,8 +32,6 @@ ul {
     &.songs {
       grid-template-columns: 1fr;
     }
-
-    
   }
 
   &.columns {
@@ -46,8 +44,14 @@ ul {
     }
 
     @include r.medium {
-      padding-left: sp.$l;
-      padding-right: sp.$l;
+      padding-left: sp.$xxl;
+      padding-right: sp.$xxl;
+      grid-template-columns: 1fr;
+    }
+
+    @include r.small {
+      padding-left: sp.$m;
+      padding-right: sp.$m;
       grid-template-columns: 1fr;
     }
   }

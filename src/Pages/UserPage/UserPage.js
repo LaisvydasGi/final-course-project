@@ -68,7 +68,7 @@ const UserPage = () => {
 
         <div className="title-wrapper thumbnail">
           <h1>{user.name}</h1>
-          <span>({user.login.username})</span>
+          <span>{user.login.username}</span>
         </div>
 
       </Card>
@@ -97,7 +97,7 @@ const UserPage = () => {
 
                         <span>{song.title}</span>
 
-                        <span>{song.album.title}</span>
+                        <span className="album-title">{song.album.title}</span>
 
                         <span className='song-length'>{song.duration}</span>
                         

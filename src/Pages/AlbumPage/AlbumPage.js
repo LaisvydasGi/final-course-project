@@ -106,7 +106,7 @@ const AlbumPage = () => {
                         
                         <span>{song.title}</span>
                       
-                        <span></span>
+                        <span className="album-title"></span>
                     
                         <span className='song-length'>{song.duration}</span>
                       </Card>

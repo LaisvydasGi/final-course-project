@@ -7,7 +7,7 @@
   margin-right: auto;
   padding: 0;
   padding-top: sp.$m;
-  padding-bottom: sp.$m;
+  padding-bottom: sp.$l;
   padding-left: sp.$l;
   padding-right: sp.$l;
 
@@ -17,8 +17,8 @@
   }
 
   &.nav-container {
-    padding-top: sp.$s;
-    padding-bottom: sp.$s;
+    padding-top: sp.$xs;
+    padding-bottom: sp.$xs;
   }
 
   &.footer-container {

@@ -5,7 +5,7 @@
 
 .card {
   background-color: c.$xx-light;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
   padding: sp.$s;
   display: flex;
 
@@ -17,13 +17,18 @@
     align-items: center;
     gap: sp.$l;
 
-    @include r.medium {
+    @include r.small {
       flex-direction: column;
       gap: sp.$xs;
     }
 
     &.large {
       box-shadow: none;
+
+      @include r.medium {
+        flex-direction: column;
+        gap: sp.$xs;
+      }
     }
 
     &.small:hover {
@@ -33,10 +38,13 @@
       @include r.dark-mode {
         background-color: c.$x-dark;
       }
-
     }
 
     & .title-wrapper{
+
+      @include r.medium {
+        text-align: center;
+      }
 
       & .title {
         font-size: fs.$l;

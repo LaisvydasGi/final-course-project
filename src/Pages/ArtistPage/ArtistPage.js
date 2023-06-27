@@ -57,7 +57,7 @@ const ArtistPage = () => {
         <h2>Discography</h2>
 
         <div className="btn-wrapper">
-          <Link to={`/albums/create/${id}`} className="btn-medium">Add New Album</Link>
+          <Link to={`/albums/create/${id}`} className="btn-medium">Create New Album</Link>
         </div>
 
         <ul className="columns album">

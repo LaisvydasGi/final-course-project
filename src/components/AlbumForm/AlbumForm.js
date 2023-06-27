@@ -35,22 +35,22 @@ const AlbumForm = ({ artistId, onAlbumFormSubmit, initialData }) => {
   return (
     <form onSubmit={formSubmitHandler}>
       <div className="form-control">
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="title">Album title:</label>
         <input type="text" id="title" name="title" value={title} onChange={titleHandler} required/>
       </div>
 
       <div className="form-control">
-        <label htmlFor="title">Cover Image URL:</label>
+        <label htmlFor="title">Album cover image URL:</label>
         <input type="url" placeholder="https://via.placeholder.com/150/771722" id="title" name="title" value={imgUrl} onChange={imgUrlHandler}/>
       </div>
 
-      <div className='form-control'>
+      <div className='form-control duration'>
         <label htmlFor='release-date'>Release date:</label>
         <input type='date' name='release-date' id='release-date' value={releaseDate} onChange={releaseDateHandler} required/>
       </div>
 
       <button type='submit'>
-        {initialData ? 'Save' : 'Create Album'}
+        {initialData ? 'Save' : 'Create'}
       </button>
     </form>
 )

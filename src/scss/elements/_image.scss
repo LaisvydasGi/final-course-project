@@ -26,6 +26,11 @@ img {
   
     &.artist {
       border-radius: 50%;
+
+      @include r.large {
+        width: 150px;
+        height: 150px;
+      }
     }
   
     &.album {
