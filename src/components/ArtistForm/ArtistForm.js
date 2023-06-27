@@ -34,14 +34,14 @@ const ArtistForm = ({ onArtistFormSubmit, initialData }) => {
   }
 
   return (
-    <form onSubmit={formSubmitHandler} noValidate>
+    <form onSubmit={formSubmitHandler}>
       <div className="form-control">
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Artist name:</label>
         <input type="text" id="name" name="name" value={name} onChange={nameHandler} required/>
       </div>
 
       <div className="form-control">
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="description">Artist description:</label>
         <textarea id="description" name="description" rows="5" cols="50" value={description} onChange={descriptionHandler} required/>
       </div>
 
@@ -50,8 +50,8 @@ const ArtistForm = ({ onArtistFormSubmit, initialData }) => {
         <input type="url" id="photo" name="photo" value={imgUrl} onChange={imgUrlHandler}/>
       </div>
 
-      <button type='submit'>
-        {initialData ? 'Edit Artist' : 'Add Artist'}
+      <button type='submit' className="btn-medium">
+        {initialData ? 'Save' : 'Add New Artist'}
       </button>
     </form>
 )

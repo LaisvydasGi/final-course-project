@@ -20,8 +20,6 @@ const SongsPage = () => {
 
   }, [])
 
-  songs && console.log(songs);
-
   return (
     songs &&
     <Container>
@@ -39,9 +37,9 @@ const SongsPage = () => {
                 
                     <span>{song.title}</span>
                   
-                    <span>{song.album.title}</span>
+                    <span className="album-title">{song.album.title}</span>
                 
-                    <span>{song.duration}</span>        
+                    <span className='song-length'>{song.duration}</span>        
                 </Card>
             </Link>
           </li>

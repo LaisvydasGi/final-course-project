@@ -1,39 +1,61 @@
-.main-header {
-  background-color: aquamarine;
-  border-bottom: 2px solid black;
+@use '../variables/responsive' as r;
+@use '../variables/colors' as c;
+
+header {
+
+  &.main-header {
+    background-color: c.$header-light;;
+    border-bottom: 2px solid c.$xx-dark;
+
+    @include r.dark-mode {
+      border-bottom: 2px solid c.$xx-light;
+      background-color: c.$header-dark;
+      color: c.$x-light;
+    }
+  }
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 20px;
-  margin: 0;
-  padding-left: 0;
-}
 
-.nav-link {
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  text-transform: capitalize;
-}
 
-.nav-link.active {
-  font-weight: 700;
-  text-decoration: underline;
-}
+  & .nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
 
-.nav-link:hover {
-  color: gray;
-}
+    &:hover {
+      color: c.$x-dark;
 
-.nav-link.active:hover {
-  color: black;
+      @include r.dark-mode {
+        color: c.$x-light;
+      }
+    }
+
+    &.active {
+      font-weight: 700;
+      text-decoration: overline;
+      cursor: default;
+
+      &:hover {
+        color: c.$xx-dark;
+
+        @include r.dark-mode {
+          color: c.$xx-light;
+        }
+      }
+    }
+  }
+
+  & .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+    margin: 0;
+    padding-left: 0;
+  }
 }

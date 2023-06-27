@@ -1,3 +1,4 @@
+@use '../variables/responsive' as r;
 @use '../variables/spacing' as sp;
 @use '../variables/colors' as c;
 @use '../variables/font-size' as fs;
@@ -7,6 +8,10 @@ details {
 
   &:hover {
     background-color: c.$x-light;
+
+    @include r.dark-mode {
+      background-color: c.$x-dark;
+    }
   }
 
   & summary {
@@ -22,10 +27,4 @@ details {
   & p {
     padding: sp.$s;
   }
-}
-
-.index-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

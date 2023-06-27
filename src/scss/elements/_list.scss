@@ -1,4 +1,5 @@
 @use '../variables/spacing' as sp;
+@use '../variables/font-size' as fs;
 @use '../variables/colors' as c;
 @use '../variables/responsive' as r;
 
@@ -6,28 +7,52 @@ ul {
   list-style-type: none;
   padding-left: 0;
   a {
-    color: black;
+    color: c.$xx-dark;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: fs.$m;
     font-weight: 400;
   
     @include r.dark-mode {
-      color: white;
+      color: c.$xx-light;
     }
   }
 }
 
 ul {
   &.rows {
-    display: flex;
-    flex-direction: column;
-    row-gap: sp.$s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: sp.$s;
+
+    @include r.large {
+      grid-template-columns: 1fr;
+    }
+
+    &.songs {
+      grid-template-columns: 1fr;
+    }
   }
 
   &.columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: sp.$m;
+
+    @include r.large {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include r.medium {
+      padding-left: sp.$xxl;
+      padding-right: sp.$xxl;
+      grid-template-columns: 1fr;
+    }
+
+    @include r.small {
+      padding-left: sp.$m;
+      padding-right: sp.$m;
+      grid-template-columns: 1fr;
+    }
   }
 }

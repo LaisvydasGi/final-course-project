@@ -84,7 +84,7 @@ const UserForm = ({ onUserFormSubmit, initialData }) => {
         <input type="url" id="photo" name="photo" value={url} onChange={urlHandler}/>
       </div>
 
-      <button type='submit'>
+      <button type='submit' className="btn-medium">
         {initialData ? 'Edit User' : 'Add New User'}
       </button>
     </form>

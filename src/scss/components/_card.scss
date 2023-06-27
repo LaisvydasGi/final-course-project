@@ -1,30 +1,50 @@
+@use '../variables/responsive' as r;
 @use '../variables/spacing' as sp;
 @use '../variables/colors' as c;
 @use '../variables/font-size' as fs;
 
-
 .card {
   background-color: c.$xx-light;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
   padding: sp.$s;
   display: flex;
+
+  @include r.dark-mode {
+    background-color: c.$xx-dark;
+  }
 
   &.artist-card {
     align-items: center;
     gap: sp.$l;
 
+    @include r.small {
+      flex-direction: column;
+      gap: sp.$xs;
+    }
+
     &.large {
       box-shadow: none;
-      background-color: c.$xx-light;
+
+      @include r.medium {
+        flex-direction: column;
+        gap: sp.$xs;
+      }
     }
 
     &.small:hover {
       background-color: c.$x-light;
-      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 5px 1px c.$box-shadow-hover;
+
+      @include r.dark-mode {
+        background-color: c.$x-dark;
+      }
     }
 
-
     & .title-wrapper{
+
+      @include r.medium {
+        text-align: center;
+      }
 
       & .title {
         font-size: fs.$l;
@@ -38,7 +58,11 @@
 
     &:hover {
       background-color: c.$x-light;
-      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 5px 1px c.$box-shadow-hover;
+
+      @include r.dark-mode {
+        background-color: c.$x-dark;
+      }
     }
 
     & .title-wrapper {
@@ -52,6 +76,12 @@
 
       & .subtitle {
         font-size: fs.$s;
+        color: c.$x-dark;
+ 
+        @include r.dark-mode {
+          color: c.$light;
+        }
+        
       }
     }
   }
@@ -61,17 +91,47 @@
 .songs-grid-system {
   display: grid;
   grid-template-columns: 1fr 10fr 6fr 4fr;
-  // text-align: center;
+
+  @include r.x-medium {
+    grid-template-columns: 1fr 10fr 4fr;
+  }
+
 
   &.banner {
     padding: sp.$s;
-    border-bottom: 2px solid c.$xx-dark;
-    color: c.$x-dark;
+    border-bottom: 2px solid c.$dark;
+    color: c.$dark;
+
+    @include r.dark-mode {
+      border-bottom: 2px solid c.$light;
+      color: c.$light;
+    }
+
   }
 
-  &.list:hover {
-    background-color: c.$x-light;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  & span.album-title {
+
+    @include r.x-medium {
+      display: none;
+    }
+  }
+
+  &.list {
+
+    &:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  
+      @include r.dark-mode {
+        background-color: c.$x-dark;
+      }
+    }
+
+  }
+  
+  & .song-length {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 

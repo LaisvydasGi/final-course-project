@@ -4,7 +4,6 @@ import { SERVER_URL } from "../../config"
 import axios from "axios"
 import Container from "../../components/Container/Container"
 import Card from "../../components/Card/Card"
-import { BounceLoader } from "react-spinners"
 import DeleteConfirm from "../../components/DeleteConfirm/DeleteConfirm"
 
 const ArtistPage = () => {
@@ -24,12 +23,8 @@ const ArtistPage = () => {
 
   }, [id])
 
-
-  if (!artist) {
-    return <BounceLoader color="#000000" />;
-  }
-
   return (
+    artist &&
     <Container>
 
       <div className="btn-wrapper">
@@ -42,7 +37,7 @@ const ArtistPage = () => {
         <Card classes='artist-card large'>
 
           <div className="image-wrapper thumbnail">
-            <img className="medium artist" src={artist.picture.imgUrl} alt='artist image'/>
+            <img className="medium artist" src={artist.picture.imgUrl} alt='artist'/>
           </div>
 
           <div className="title-wrapper thumbnail">
@@ -62,7 +57,7 @@ const ArtistPage = () => {
         <h2>Discography</h2>
 
         <div className="btn-wrapper">
-          <Link to={`/albums/create/${id}`} className="btn-medium">Add New Album</Link>
+          <Link to={`/albums/create/${id}`} className="btn-medium">Create New Album</Link>
         </div>
 
         <ul className="columns album">

@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 const SongForm = ({ albumId, onSongFormSubmit, initialData }) => {
 
   const [title, setTitle] = useState('')
-  const [min, setMin] = useState('')
-  const [sec, setSec] = useState('')
+  const [min, setMin] = useState('min')
+  const [sec, setSec] = useState('sec')
 
 
   const titleHandler =  e => setTitle(e.target.value);
@@ -34,15 +34,15 @@ const SongForm = ({ albumId, onSongFormSubmit, initialData }) => {
   return (
       <form onSubmit={formSubmitHandler}>
         <div className='form-control'>
-          <label htmlFor='title'>Title:</label>
+          <label htmlFor='title'>Song title:</label>
           <input type='text' name='title' id='title' value={title} onChange={titleHandler} required/>
         </div>
-        <div className='form-control'>
-          <label htmlFor='min'>Duration: ({min}:{sec})</label>
+        <div className='form-control duration'>
+          <label htmlFor='min'>Song length: ({min}:{sec})</label>
           <input type='number' name='min' id='min' min="0" max="20" value={min} onChange={minHandler} required/>
-          <label htmlFor='min'>minutes</label>
-          <input type='number' name='sec' id='sec' min="0" max="59" value={sec} onChange={secHandler} />
-          <label htmlFor='sec'>seconds</label>
+          <label htmlFor='min'>min</label>
+          <input type='number' name='sec' id='sec' min="0" max="59" value={sec} onChange={secHandler} required/>
+          <label htmlFor='sec'>sec</label>
         </div>
 
         <div className='form-control'>

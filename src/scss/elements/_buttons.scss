@@ -1,16 +1,33 @@
+@use '../variables/responsive' as r;
 @use '../variables/spacing' as sp;
 @use '../variables/colors' as c;
 @use '../variables/font-size' as fs;
 
 button {
-  background-color: c.$alarm;
+  background-color: c.$alarm-light;
   color: c.$xx-light;
   font-size: fs.$s;
 
-  border: 1px solid black;
+  border: none;
+
   border-radius: 5%;
   padding: sp.$xs;
+  margin: sp.$xs;
   width: 100px;
+
+  @include r.dark-mode {
+    background-color: c.$alarm-dark;
+    color: c.$xx-dark;
+  }
+
+  &:hover {
+    background-color: c.$alarm-light-hover;
+    cursor: pointer;
+
+    @include r.dark-mode {
+      background-color: c.$alarm-dark-hover;
+    }
+  }
 
   &.btn-medium {
     width: 200px;
@@ -21,17 +38,30 @@ button {
   display: flex;
   
   & a {
-    background-color: c.$alarm;
+    background-color: c.$alarm-light;
     color: c.$xx-light;
     font-size: fs.$s;
 
     text-decoration: none;
     text-align: center;
 
-    border: 1px solid black;
     border-radius: 5%;
     
     padding: sp.$xs;
+    margin: sp.$xs;
+
+    @include r.dark-mode {
+      background-color: c.$alarm-dark;
+      color: c.$xx-dark
+    }
+
+    &:hover {
+      background-color: c.$alarm-light-hover;
+  
+      @include r.dark-mode {
+        background-color: c.$alarm-dark-hover;
+      }
+    }
     
     &.btn-small {
       width: 100px;

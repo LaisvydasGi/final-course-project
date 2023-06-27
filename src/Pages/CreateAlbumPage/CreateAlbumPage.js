@@ -40,7 +40,7 @@ const CreateAlbumPage = () => {
     artist &&
     <Container>
       <h1>{artist.name}</h1>
-      <h2>Add New Album</h2>
+      <h2>Create New Album</h2>
       <AlbumForm artistId={artistId} onAlbumFormSubmit={createAlbumHandler}/>
 
       {formErrorMessage && <p>{formErrorMessage}</p>}

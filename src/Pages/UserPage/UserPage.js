@@ -63,12 +63,12 @@ const UserPage = () => {
       <Card classes='artist-card large'>
 
         <div className="image-wrapper thumbnail">
-          <img className="medium artist" src={user.picture.url} alt='artist image'/>
+          <img className="medium artist" src={user.picture.url} alt='user'/>
         </div>
 
         <div className="title-wrapper thumbnail">
           <h1>{user.name}</h1>
-          <span>({user.login.username})</span>
+          <span>{user.login.username}</span>
         </div>
 
       </Card>
@@ -97,9 +97,9 @@ const UserPage = () => {
 
                         <span>{song.title}</span>
 
-                        <span>{song.album.title}</span>
+                        <span className="album-title">{song.album.title}</span>
 
-                        <span>{song.duration}</span>
+                        <span className='song-length'>{song.duration}</span>
                         
                       </Card>
                     </Link>

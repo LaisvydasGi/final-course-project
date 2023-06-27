@@ -59,7 +59,7 @@ const SongPage = () => {
         <div className="song-wrapper">
 
           <div className="song-edit-controls">
-            <button onClick={viewToggleBtnHandler}>Edit Song</button>
+            <button onClick={viewToggleBtnHandler}>Edit Info</button>
             <DeleteConfirm itemName={song.title} deleteFrom={`/songs/${id}`} navigateTo={`/albums/${song.albumId}`} />
           </div>
 
@@ -81,8 +81,8 @@ const SongPage = () => {
               </div>
             </Card>
 
-            <div>
-              <span>From: <Link to={`/albums/${song.albumId}`}>{song.album.title}</Link></span>
+            <div className="">
+              <span>From: <Link to={`/albums/${song.albumId}`} className='parent-link'>{song.album.title}</Link></span>
             </div>
             <div>
               <span>Released at: {song.album.released}</span>
