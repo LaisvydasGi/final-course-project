@@ -5,7 +5,6 @@ import axios from "axios"
 import Container from "../../components/Container/Container"
 import { SERVER_URL } from "../../config"
 import Card from "../../components/Card/Card"
-import { BounceLoader } from "react-spinners"
 
 const AlbumsPage = () => {
 

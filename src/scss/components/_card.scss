@@ -17,6 +17,11 @@
     align-items: center;
     gap: sp.$l;
 
+    @include r.medium {
+      flex-direction: column;
+      gap: sp.$xs;
+    }
+
     &.large {
       box-shadow: none;
     }
@@ -28,8 +33,8 @@
       @include r.dark-mode {
         background-color: c.$x-dark;
       }
-    }
 
+    }
 
     & .title-wrapper{
 
@@ -78,7 +83,11 @@
 .songs-grid-system {
   display: grid;
   grid-template-columns: 1fr 10fr 6fr 4fr;
-  // text-align: center;
+
+  @include r.x-medium {
+    grid-template-columns: 1fr 10fr 4fr;
+  }
+
 
   &.banner {
     padding: sp.$s;
@@ -92,15 +101,26 @@
 
   }
 
-  &.list:hover {
-    background-color: c.$x-light;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  & span.album-title {
 
-    @include r.dark-mode {
-      background-color: c.$x-dark;
+    @include r.x-medium {
+      display: none;
     }
   }
 
+  &.list {
+
+    &:hover {
+      background-color: c.$x-light;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+  
+      @include r.dark-mode {
+        background-color: c.$x-dark;
+      }
+    }
+
+  }
+  
   & .song-length {
     display: flex;
     justify-content: flex-end;

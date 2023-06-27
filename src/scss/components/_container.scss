@@ -2,21 +2,23 @@
 @use '../variables/spacing' as sp;
 
 .container {
-  max-width: 700px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   padding-top: sp.$m;
   padding-bottom: sp.$m;
+  padding-left: sp.$l;
+  padding-right: sp.$l;
 
-  @include r.x-large {
-    padding-left: 32px;
-    padding-right: 32px;
+  @include r.x-medium {
+    padding-left: sp.$s;
+    padding-right: sp.$s;
   }
 
   &.nav-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: sp.$s;
+    padding-bottom: sp.$s;
   }
 
   &.footer-container {

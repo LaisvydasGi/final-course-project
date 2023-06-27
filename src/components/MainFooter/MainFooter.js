@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../images/linkedin_icon.svg';
 import Container from "../Container/Container"
 
@@ -13,7 +14,7 @@ const MainFooter = () => {
           </span>
         </div>
         <div>
-          <span>© Laisvydas Giriūnas</span>
+          <span>© <Link to="https://www.linkedin.com/in/laisvydas-g-39a25410b/" className='parent-link'>Laisvydas Giriūnas</Link></span>
         </div>
       </Container>
     </footer>

@@ -1,4 +1,4 @@
-import clock from './duration_icon.svg'
+import clock from '../../images/duration_icon.svg'
 
 const SongsBar = ({ inAlbum }) => {
   return (
@@ -6,12 +6,12 @@ const SongsBar = ({ inAlbum }) => {
       <span>#</span>
       <span>Title</span>
       
-      <span>
+      <span className='album-title'>
         {inAlbum ? '' : 'Album'}
       </span>
 
       <span className='song-length'>
-        <img src={clock} alt='clock' width={'20px'} />
+        <img src={clock} alt='clock' width={'20px'} className='icon'/>
       </span>
     </div>
   )
