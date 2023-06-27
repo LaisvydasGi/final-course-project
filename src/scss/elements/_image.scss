@@ -2,33 +2,41 @@
 @use '../variables/spacing' as sp;
 @use '../variables/colors' as c;
 
+img {
 
-img.thumbnail {
-  object-fit: cover;
 
-  &.artist {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  &.thumbnail {
+    object-fit: cover;
+  
+    &.artist {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  
+    &.album {
+      width: 100%;
+      border-radius: 20%;
+    }
   }
 
-  &.album {
-    width: 100%;
-    border-radius: 20%;
-  }
-}
-
-img.medium {
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-
-  &.artist {
-    border-radius: 50%;
-  }
-
-  &.album {
-    border-radius: 10%;
+  &.medium {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  
+    &.artist {
+      border-radius: 50%;
+    }
+  
+    &.album {
+      border-radius: 10%;
+    }
   }
 
+  &.icon {
+    @include r.dark-mode {
+      filter: invert(100%);
+    }
+  }
 }

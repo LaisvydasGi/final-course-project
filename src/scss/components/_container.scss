@@ -18,4 +18,10 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  &.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

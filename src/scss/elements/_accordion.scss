@@ -8,6 +8,10 @@ details {
 
   &:hover {
     background-color: c.$x-light;
+
+    @include r.dark-mode {
+      background-color: c.$x-dark;
+    }
   }
 
   & summary {

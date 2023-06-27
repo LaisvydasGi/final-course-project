@@ -81,8 +81,8 @@ const SongPage = () => {
               </div>
             </Card>
 
-            <div>
-              <span>From: <Link to={`/albums/${song.albumId}`}>{song.album.title}</Link></span>
+            <div className="">
+              <span>From: <Link to={`/albums/${song.albumId}`} className='parent-link'>{song.album.title}</Link></span>
             </div>
             <div>
               <span>Released at: {song.album.released}</span>

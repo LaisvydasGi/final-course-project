@@ -30,7 +30,7 @@ const UsersPage = () => {
               <Card classes='artist-card small'>
 
                 <div className="image-wrapper thumbnail">
-                  <img className="thumbnail artist" src={user.picture.url} />
+                  <img className="thumbnail artist" src={user.picture.url} alt="user"/>
                 </div>
 
                 <div className="title-wrapper thumbnail">

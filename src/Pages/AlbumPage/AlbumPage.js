@@ -87,7 +87,7 @@ const AlbumPage = () => {
 
               <h2>{album.title}</h2>
 
-              <Link to={`/artists/${album.artistId}`}>
+              <Link to={`/artists/${album.artistId}`} className='parent-link'>
                 {album.artist.name}
               </Link>
             </div>

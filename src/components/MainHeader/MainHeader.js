@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-import logo from './logo.svg'
+import logo from '../../images/logo.svg'
 import Container from '../Container/Container'
 
 const MainHeader = () => {
@@ -11,7 +11,7 @@ const MainHeader = () => {
         <nav className='main-nav'>
           <div>
             <NavLink to='/' className='nav-link'>
-              <img src={logo} className='nav-logo' alt='logo' width='50rem'/>
+              <img src={logo} className='nav-logo icon' alt='logo' width='50rem'/>
             </NavLink>
           </div>
           <ul className='nav-list'>

@@ -1,12 +1,13 @@
 @use '../variables/responsive' as r;
+@use '../variables/colors' as c;
 
 footer {
-  background-color: aquamarine;
-  border-top: 2px solid black;
-}
+  background-color: c.$header-light;
+  border-top: 2px solid c.$xx-dark;
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include r.dark-mode {
+    border-top: 2px solid c.$xx-light;
+    background-color: c.$header-dark;
+    color: c.$xx-light;
+  }
 }

@@ -1,9 +1,18 @@
 $xx-dark: black;
 $x-dark: rgb(73, 73, 73);
-$dark: grey;
+$dark: rgb(133, 133, 133);
 
 $xx-light: rgb(247, 246, 246);
-$x-light: rgb(211, 198, 198);
-$light: rgb(196, 174, 174);
+$x-light: #d7ece5;
+$light: #9cc5b6;
 
-$alarm: blue;
+$alarm-light: rgb(50, 0, 189);
+$alarm-light-hover: blue;
+$alarm-dark: rgb(0, 162, 255);
+$alarm-dark-hover: rgb(0, 114, 180);
+
+
+$header-light: #42c5a0;
+$header-dark: #0c2b22;
+
+$box-shadow-hover: rgba(0, 0, 0, 0.5);

@@ -20,8 +20,6 @@ const SongsPage = () => {
 
   }, [])
 
-  songs && console.log(songs);
-
   return (
     songs &&
     <Container>
