@@ -133,22 +133,9 @@
       "imgUrl": "https://via.placeholder.com/150/ff00dd",
       "released": "2021-06-29",
       "id": 12
-    },
-    {
-      "title": "dasdasd",
-      "artistId": 1,
-      "imgUrl": "https://via.placeholder.com/150/771722",
-      "released": "2023-06-10",
-      "id": 13
     }
   ],
   "songs": [
-    {
-      "title": "Aenean ut lobortis tortor",
-      "duration": "3:12",
-      "albumId": 1,
-      "id": 1
-    },
     {
       "title": "Duis rutrum",
       "duration": "3:52",
@@ -307,38 +294,6 @@
     }
   ],
   "users": [
-    {
-      "name": "Côme Nicolas",
-      "email": "come.nicolas@example.com",
-      "login": {
-        "username": "bluebutterfly873",
-        "password": "19781978"
-      },
-      "registered": {
-        "date": "2023-06-27"
-      },
-      "phone": "04-57-81-44-67",
-      "picture": {
-        "url": "https://via.placeholder.com/150/112233"
-      },
-      "id": 1
-    },
-    {
-      "name": "Carl Olsen",
-      "email": "carl.olsen@example.com",
-      "login": {
-        "username": "lazyfrog646",
-        "password": "dakota"
-      },
-      "registered": {
-        "date": "2016-02-05"
-      },
-      "phone": "22256784",
-      "picture": {
-        "url": "https://randomuser.me/api/portraits/men/71.jpg"
-      },
-      "id": 2
-    },
     {
       "name": "Eva Fields",
       "email": "eva.fields@example.com",
